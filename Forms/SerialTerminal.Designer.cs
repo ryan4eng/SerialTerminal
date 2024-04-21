@@ -329,68 +329,15 @@
             this.tabTcpSvr_butOpen = new System.Windows.Forms.Button();
             this.tabTcpSvr_lbClientList = new SerialTerminal.ListBox();
             this.tabUdpClient = new System.Windows.Forms.TabPage();
-            this.tabProgram = new System.Windows.Forms.TabPage();
-            this.label51 = new System.Windows.Forms.Label();
-            this.tabProg_tbSpiFile = new System.Windows.Forms.TextBox();
-            this.tabProg_butSpiBrowse = new System.Windows.Forms.Button();
-            this.tabProg_ButClearLog = new System.Windows.Forms.Button();
-            this.tabProg_butSpiStop = new System.Windows.Forms.Button();
-            this.prog_Log_TB = new System.Windows.Forms.RichTextBox();
-            this.tabProg_butSpiStart = new System.Windows.Forms.Button();
-            this.tabUtil = new System.Windows.Forms.TabPage();
-            this.label71 = new System.Windows.Forms.Label();
-            this.tabUtil_butCrcHexAscii = new System.Windows.Forms.Button();
-            this.tabUtil_tbCrcHexAsciiAnswer = new System.Windows.Forms.TextBox();
-            this.tabUtil_tbCrcHexAsciiEntry = new System.Windows.Forms.TextBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.tabUtil_butCrcAscii = new System.Windows.Forms.Button();
-            this.tabUtil_tbCrcAsciiAnswer = new System.Windows.Forms.TextBox();
-            this.tabUtil_tbCrcAsciiEntry = new System.Windows.Forms.TextBox();
-            this.tabUtil_butSimGetInfo = new System.Windows.Forms.Button();
-            this.tabUtil_tbSimOutput = new System.Windows.Forms.RichTextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.tabUtil_tbSimInput = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.tabUtil_IMEIConv_But = new System.Windows.Forms.Button();
-            this.crc_IMEIConv_TB = new System.Windows.Forms.TextBox();
-            this.crc_IMEIToSend_TB = new System.Windows.Forms.TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabSerial_rightClickContextMain = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.rightClickClear = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.rightClick_DisplayText = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabSerial_rightClick_NoSpecial = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabSerial_rightClick_Normal = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabSerial_rightClick_AllButNL = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabSerial_rightClick_AllHEX = new System.Windows.Forms.ToolStripMenuItem();
-            this.openLogContaingDirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openLogFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpClient_contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tabTcpClient_RightClick_Clear = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpClient_RightClick_TxtDisp_None = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpClient_RightClick_TxtDisp_Normal = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpClient_RightClick_TxtDisp_AllHex = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpClient_RightClick_OpenDir = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpClient_RightClick_OpenFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpSvr_contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tabTcpSvr_RightClick_Clear = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpSvr_RightClick_TxtDisp_None = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpSvr_RightClick_TxtDisp_Normal = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpSvr_RightClick_TxtDisp_AllHex = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpSvr_RightClick_OpenDir = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabTcpSvr_RightClick_OpenFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.tabUdpClient_butClear = new System.Windows.Forms.Button();
+            this.tabUdpClient_butClose = new System.Windows.Forms.Button();
+            this.tabUdpClient_tbLog = new System.Windows.Forms.RichTextBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.tabUdpClient_tbPort = new System.Windows.Forms.TextBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.tabUdpClient_tbIPAddr = new System.Windows.Forms.TextBox();
+            this.tabUdpClient_butOpen = new System.Windows.Forms.Button();
+            this.tabUdpClient_splitContainer = new System.Windows.Forms.SplitContainer();
             this.tabUdpClient_butSend1 = new System.Windows.Forms.Button();
             this.tabUdpClient_cbLFSend8 = new System.Windows.Forms.CheckBox();
             this.tabUdpClient_cbLFSend7 = new System.Windows.Forms.CheckBox();
@@ -474,14 +421,77 @@
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.tabUdpClient_butSend14 = new System.Windows.Forms.Button();
-            this.tabUdpClient_butClear = new System.Windows.Forms.Button();
-            this.tabUdpClient_butClose = new System.Windows.Forms.Button();
-            this.tabUdpClient_tbLog = new System.Windows.Forms.RichTextBox();
-            this.label93 = new System.Windows.Forms.Label();
-            this.tabUdpClient_tbPort = new System.Windows.Forms.TextBox();
-            this.label94 = new System.Windows.Forms.Label();
-            this.tabUdpClient_tbIPAddr = new System.Windows.Forms.TextBox();
-            this.tabUdpClient_butOpen = new System.Windows.Forms.Button();
+            this.tabProgram = new System.Windows.Forms.TabPage();
+            this.label51 = new System.Windows.Forms.Label();
+            this.tabProg_tbSpiFile = new System.Windows.Forms.TextBox();
+            this.tabProg_butSpiBrowse = new System.Windows.Forms.Button();
+            this.tabProg_ButClearLog = new System.Windows.Forms.Button();
+            this.tabProg_butSpiStop = new System.Windows.Forms.Button();
+            this.prog_Log_TB = new System.Windows.Forms.RichTextBox();
+            this.tabProg_butSpiStart = new System.Windows.Forms.Button();
+            this.tabUtil = new System.Windows.Forms.TabPage();
+            this.label71 = new System.Windows.Forms.Label();
+            this.tabUtil_butCrcHexAscii = new System.Windows.Forms.Button();
+            this.tabUtil_tbCrcHexAsciiAnswer = new System.Windows.Forms.TextBox();
+            this.tabUtil_tbCrcHexAsciiEntry = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.tabUtil_butCrcAscii = new System.Windows.Forms.Button();
+            this.tabUtil_tbCrcAsciiAnswer = new System.Windows.Forms.TextBox();
+            this.tabUtil_tbCrcAsciiEntry = new System.Windows.Forms.TextBox();
+            this.tabUtil_butSimGetInfo = new System.Windows.Forms.Button();
+            this.tabUtil_tbSimOutput = new System.Windows.Forms.RichTextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.tabUtil_tbSimInput = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tabUtil_IMEIConv_But = new System.Windows.Forms.Button();
+            this.crc_IMEIConv_TB = new System.Windows.Forms.TextBox();
+            this.crc_IMEIToSend_TB = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabSerial_rightClickContextMain = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.rightClickClear = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.rightClick_DisplayText = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabSerial_rightClick_NoSpecial = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabSerial_rightClick_Normal = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabSerial_rightClick_AllButNL = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabSerial_rightClick_AllHEX = new System.Windows.Forms.ToolStripMenuItem();
+            this.openLogContaingDirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openLogFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpClient_contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tabTcpClient_RightClick_Clear = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpClient_RightClick_TxtDisp_None = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpClient_RightClick_TxtDisp_Normal = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpClient_RightClick_TxtDisp_AllHex = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpClient_RightClick_OpenDir = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpClient_RightClick_OpenFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpSvr_contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tabTcpSvr_RightClick_Clear = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpSvr_RightClick_TxtDisp_None = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpSvr_RightClick_TxtDisp_Normal = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpSvr_RightClick_TxtDisp_AllHex = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpSvr_RightClick_OpenDir = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabTcpSvr_RightClick_OpenFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabUdpClient_contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tabUdpClient_RightClick_Clear = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabUdpClient_RightClick_TxtDisp_None = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabUdpClient_RightClick_TxtDisp_Normal = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabUdpClient_RightClick_TxtDisp_AllHex = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabUdpClient_RightClick_OpenDir = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabUdpClient_RightClick_OpenFile = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl.SuspendLayout();
             this.tabSerial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabSerial_splitContainer1)).BeginInit();
@@ -499,16 +509,17 @@
             this.tabTcpSvr_splitContainer.Panel2.SuspendLayout();
             this.tabTcpSvr_splitContainer.SuspendLayout();
             this.tabUdpClient.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabUdpClient_splitContainer)).BeginInit();
+            this.tabUdpClient_splitContainer.Panel1.SuspendLayout();
+            this.tabUdpClient_splitContainer.Panel2.SuspendLayout();
+            this.tabUdpClient_splitContainer.SuspendLayout();
             this.tabProgram.SuspendLayout();
             this.tabUtil.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabSerial_rightClickContextMain.SuspendLayout();
             this.tabTcpClient_contextMenuStrip.SuspendLayout();
             this.tabTcpSvr_contextMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.tabUdpClient_contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabSerial_ddBaudRate
@@ -4012,7 +4023,7 @@
             this.tabUdpClient.Controls.Add(this.label94);
             this.tabUdpClient.Controls.Add(this.tabUdpClient_tbIPAddr);
             this.tabUdpClient.Controls.Add(this.tabUdpClient_butOpen);
-            this.tabUdpClient.Controls.Add(this.splitContainer1);
+            this.tabUdpClient.Controls.Add(this.tabUdpClient_splitContainer);
             this.tabUdpClient.Location = new System.Drawing.Point(4, 23);
             this.tabUdpClient.Name = "tabUdpClient";
             this.tabUdpClient.Padding = new System.Windows.Forms.Padding(3);
@@ -4020,643 +4031,195 @@
             this.tabUdpClient.TabIndex = 7;
             this.tabUdpClient.Text = "UDP Client";
             // 
-            // tabProgram
+            // tabUdpClient_butClear
             // 
-            this.tabProgram.BackColor = System.Drawing.SystemColors.Control;
-            this.tabProgram.Controls.Add(this.label51);
-            this.tabProgram.Controls.Add(this.tabProg_tbSpiFile);
-            this.tabProgram.Controls.Add(this.tabProg_butSpiBrowse);
-            this.tabProgram.Controls.Add(this.tabProg_ButClearLog);
-            this.tabProgram.Controls.Add(this.tabProg_butSpiStop);
-            this.tabProgram.Controls.Add(this.prog_Log_TB);
-            this.tabProgram.Controls.Add(this.tabProg_butSpiStart);
-            this.tabProgram.Location = new System.Drawing.Point(4, 23);
-            this.tabProgram.Name = "tabProgram";
-            this.tabProgram.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProgram.Size = new System.Drawing.Size(897, 497);
-            this.tabProgram.TabIndex = 4;
-            this.tabProgram.Text = "Programmer";
+            this.tabUdpClient_butClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tabUdpClient_butClear.Location = new System.Drawing.Point(110, 268);
+            this.tabUdpClient_butClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabUdpClient_butClear.Name = "tabUdpClient_butClear";
+            this.tabUdpClient_butClear.Size = new System.Drawing.Size(46, 24);
+            this.tabUdpClient_butClear.TabIndex = 130;
+            this.tabUdpClient_butClear.Text = "Clear";
+            this.tabUdpClient_butClear.UseVisualStyleBackColor = true;
             // 
-            // label51
+            // tabUdpClient_butClose
             // 
-            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(602, 10);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(71, 14);
-            this.label51.TabIndex = 16;
-            this.label51.Text = "Program SPI";
+            this.tabUdpClient_butClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tabUdpClient_butClose.Enabled = false;
+            this.tabUdpClient_butClose.Location = new System.Drawing.Point(57, 268);
+            this.tabUdpClient_butClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabUdpClient_butClose.Name = "tabUdpClient_butClose";
+            this.tabUdpClient_butClose.Size = new System.Drawing.Size(46, 24);
+            this.tabUdpClient_butClose.TabIndex = 129;
+            this.tabUdpClient_butClose.Text = "Close";
+            this.tabUdpClient_butClose.UseVisualStyleBackColor = true;
             // 
-            // tabProg_tbSpiFile
+            // tabUdpClient_tbLog
             // 
-            this.tabProg_tbSpiFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabProg_tbSpiFile.Location = new System.Drawing.Point(605, 27);
-            this.tabProg_tbSpiFile.Name = "tabProg_tbSpiFile";
-            this.tabProg_tbSpiFile.Size = new System.Drawing.Size(134, 21);
-            this.tabProg_tbSpiFile.TabIndex = 15;
-            // 
-            // tabProg_butSpiBrowse
-            // 
-            this.tabProg_butSpiBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabProg_butSpiBrowse.Location = new System.Drawing.Point(605, 54);
-            this.tabProg_butSpiBrowse.Name = "tabProg_butSpiBrowse";
-            this.tabProg_butSpiBrowse.Size = new System.Drawing.Size(75, 23);
-            this.tabProg_butSpiBrowse.TabIndex = 14;
-            this.tabProg_butSpiBrowse.Text = "Browse";
-            this.tabProg_butSpiBrowse.UseVisualStyleBackColor = true;
-            // 
-            // tabProg_ButClearLog
-            // 
-            this.tabProg_ButClearLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabProg_ButClearLog.Location = new System.Drawing.Point(605, 468);
-            this.tabProg_ButClearLog.Name = "tabProg_ButClearLog";
-            this.tabProg_ButClearLog.Size = new System.Drawing.Size(75, 23);
-            this.tabProg_ButClearLog.TabIndex = 10;
-            this.tabProg_ButClearLog.Text = "Clear";
-            this.tabProg_ButClearLog.UseVisualStyleBackColor = true;
-            // 
-            // tabProg_butSpiStop
-            // 
-            this.tabProg_butSpiStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabProg_butSpiStop.Enabled = false;
-            this.tabProg_butSpiStop.Location = new System.Drawing.Point(686, 468);
-            this.tabProg_butSpiStop.Name = "tabProg_butSpiStop";
-            this.tabProg_butSpiStop.Size = new System.Drawing.Size(75, 23);
-            this.tabProg_butSpiStop.TabIndex = 9;
-            this.tabProg_butSpiStop.Text = "Stop";
-            this.tabProg_butSpiStop.UseVisualStyleBackColor = true;
-            // 
-            // prog_Log_TB
-            // 
-            this.prog_Log_TB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabUdpClient_tbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.prog_Log_TB.BackColor = System.Drawing.SystemColors.Window;
-            this.prog_Log_TB.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prog_Log_TB.Location = new System.Drawing.Point(4, 7);
-            this.prog_Log_TB.Name = "prog_Log_TB";
-            this.prog_Log_TB.ReadOnly = true;
-            this.prog_Log_TB.Size = new System.Drawing.Size(592, 490);
-            this.prog_Log_TB.TabIndex = 1;
-            this.prog_Log_TB.Text = "";
-            // 
-            // tabProg_butSpiStart
-            // 
-            this.tabProg_butSpiStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabProg_butSpiStart.Location = new System.Drawing.Point(759, 27);
-            this.tabProg_butSpiStart.Name = "tabProg_butSpiStart";
-            this.tabProg_butSpiStart.Size = new System.Drawing.Size(127, 23);
-            this.tabProg_butSpiStart.TabIndex = 0;
-            this.tabProg_butSpiStart.Text = "Program SPI";
-            this.tabProg_butSpiStart.UseVisualStyleBackColor = true;
-            // 
-            // tabUtil
-            // 
-            this.tabUtil.BackColor = System.Drawing.SystemColors.Control;
-            this.tabUtil.Controls.Add(this.label71);
-            this.tabUtil.Controls.Add(this.tabUtil_butCrcHexAscii);
-            this.tabUtil.Controls.Add(this.tabUtil_tbCrcHexAsciiAnswer);
-            this.tabUtil.Controls.Add(this.tabUtil_tbCrcHexAsciiEntry);
-            this.tabUtil.Controls.Add(this.label70);
-            this.tabUtil.Controls.Add(this.tabUtil_butCrcAscii);
-            this.tabUtil.Controls.Add(this.tabUtil_tbCrcAsciiAnswer);
-            this.tabUtil.Controls.Add(this.tabUtil_tbCrcAsciiEntry);
-            this.tabUtil.Controls.Add(this.tabUtil_butSimGetInfo);
-            this.tabUtil.Controls.Add(this.tabUtil_tbSimOutput);
-            this.tabUtil.Controls.Add(this.label47);
-            this.tabUtil.Controls.Add(this.tabUtil_tbSimInput);
-            this.tabUtil.Controls.Add(this.label22);
-            this.tabUtil.Controls.Add(this.tabUtil_IMEIConv_But);
-            this.tabUtil.Controls.Add(this.crc_IMEIConv_TB);
-            this.tabUtil.Controls.Add(this.crc_IMEIToSend_TB);
-            this.tabUtil.Location = new System.Drawing.Point(4, 23);
-            this.tabUtil.Name = "tabUtil";
-            this.tabUtil.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUtil.Size = new System.Drawing.Size(897, 497);
-            this.tabUtil.TabIndex = 3;
-            this.tabUtil.Text = "Utilities";
-            // 
-            // label71
-            // 
-            this.label71.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(666, 117);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(154, 14);
-            this.label71.TabIndex = 25;
-            this.label71.Text = "Get CRC from ascii hex bytes";
-            // 
-            // tabUtil_butCrcHexAscii
-            // 
-            this.tabUtil_butCrcHexAscii.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabUtil_butCrcHexAscii.Location = new System.Drawing.Point(774, 134);
-            this.tabUtil_butCrcHexAscii.Name = "tabUtil_butCrcHexAscii";
-            this.tabUtil_butCrcHexAscii.Size = new System.Drawing.Size(95, 26);
-            this.tabUtil_butCrcHexAscii.TabIndex = 24;
-            this.tabUtil_butCrcHexAscii.Text = "Calc CRC Hex";
-            this.tabUtil_butCrcHexAscii.UseVisualStyleBackColor = true;
-            // 
-            // tabUtil_tbCrcHexAsciiAnswer
-            // 
-            this.tabUtil_tbCrcHexAsciiAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabUtil_tbCrcHexAsciiAnswer.Location = new System.Drawing.Point(669, 162);
-            this.tabUtil_tbCrcHexAsciiAnswer.Name = "tabUtil_tbCrcHexAsciiAnswer";
-            this.tabUtil_tbCrcHexAsciiAnswer.Size = new System.Drawing.Size(99, 21);
-            this.tabUtil_tbCrcHexAsciiAnswer.TabIndex = 23;
-            // 
-            // tabUtil_tbCrcHexAsciiEntry
-            // 
-            this.tabUtil_tbCrcHexAsciiEntry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabUtil_tbCrcHexAsciiEntry.Location = new System.Drawing.Point(669, 134);
-            this.tabUtil_tbCrcHexAsciiEntry.MaxLength = 32768;
-            this.tabUtil_tbCrcHexAsciiEntry.Name = "tabUtil_tbCrcHexAsciiEntry";
-            this.tabUtil_tbCrcHexAsciiEntry.Size = new System.Drawing.Size(99, 21);
-            this.tabUtil_tbCrcHexAsciiEntry.TabIndex = 22;
-            this.tabUtil_tbCrcHexAsciiEntry.Text = "12 A5 44 9E";
-            // 
-            // label70
-            // 
-            this.label70.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(666, 9);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(102, 14);
-            this.label70.TabIndex = 21;
-            this.label70.Text = "Get CRC from ascii";
-            // 
-            // tabUtil_butCrcAscii
-            // 
-            this.tabUtil_butCrcAscii.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabUtil_butCrcAscii.Location = new System.Drawing.Point(774, 26);
-            this.tabUtil_butCrcAscii.Name = "tabUtil_butCrcAscii";
-            this.tabUtil_butCrcAscii.Size = new System.Drawing.Size(117, 39);
-            this.tabUtil_butCrcAscii.TabIndex = 20;
-            this.tabUtil_butCrcAscii.Text = "Calc CRC in ASCII hex and Clipboard";
-            this.tabUtil_butCrcAscii.UseVisualStyleBackColor = true;
-            // 
-            // tabUtil_tbCrcAsciiAnswer
-            // 
-            this.tabUtil_tbCrcAsciiAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabUtil_tbCrcAsciiAnswer.Location = new System.Drawing.Point(669, 54);
-            this.tabUtil_tbCrcAsciiAnswer.Name = "tabUtil_tbCrcAsciiAnswer";
-            this.tabUtil_tbCrcAsciiAnswer.Size = new System.Drawing.Size(99, 21);
-            this.tabUtil_tbCrcAsciiAnswer.TabIndex = 19;
-            // 
-            // tabUtil_tbCrcAsciiEntry
-            // 
-            this.tabUtil_tbCrcAsciiEntry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabUtil_tbCrcAsciiEntry.Location = new System.Drawing.Point(669, 26);
-            this.tabUtil_tbCrcAsciiEntry.MaxLength = 14;
-            this.tabUtil_tbCrcAsciiEntry.Name = "tabUtil_tbCrcAsciiEntry";
-            this.tabUtil_tbCrcAsciiEntry.Size = new System.Drawing.Size(99, 21);
-            this.tabUtil_tbCrcAsciiEntry.TabIndex = 18;
-            this.tabUtil_tbCrcAsciiEntry.Text = "$S1234";
-            // 
-            // tabUtil_butSimGetInfo
-            // 
-            this.tabUtil_butSimGetInfo.Location = new System.Drawing.Point(151, 162);
-            this.tabUtil_butSimGetInfo.Name = "tabUtil_butSimGetInfo";
-            this.tabUtil_butSimGetInfo.Size = new System.Drawing.Size(82, 22);
-            this.tabUtil_butSimGetInfo.TabIndex = 17;
-            this.tabUtil_butSimGetInfo.Text = "Get Sim Info";
-            this.tabUtil_butSimGetInfo.UseVisualStyleBackColor = true;
-            // 
-            // tabUtil_tbSimOutput
-            // 
-            this.tabUtil_tbSimOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabUtil_tbSimOutput.Location = new System.Drawing.Point(11, 191);
-            this.tabUtil_tbSimOutput.Name = "tabUtil_tbSimOutput";
-            this.tabUtil_tbSimOutput.Size = new System.Drawing.Size(281, 96);
-            this.tabUtil_tbSimOutput.TabIndex = 16;
-            this.tabUtil_tbSimOutput.Text = "";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(12, 146);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(346, 14);
-            this.label47.TabIndex = 15;
-            this.label47.Text = "Enter a 19 or 20 digit Sim num (ICCID) and look at the breakdown";
-            // 
-            // tabUtil_tbSimInput
-            // 
-            this.tabUtil_tbSimInput.Location = new System.Drawing.Point(12, 163);
-            this.tabUtil_tbSimInput.MaxLength = 20;
-            this.tabUtil_tbSimInput.Name = "tabUtil_tbSimInput";
-            this.tabUtil_tbSimInput.Size = new System.Drawing.Size(133, 21);
-            this.tabUtil_tbSimInput.TabIndex = 13;
-            this.tabUtil_tbSimInput.Text = "89610146614609000029";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(8, 9);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(218, 14);
-            this.label22.TabIndex = 12;
-            this.label22.Text = "Enter 14 digit IMEI. Get the CRC last digit";
-            // 
-            // tabUtil_IMEIConv_But
-            // 
-            this.tabUtil_IMEIConv_But.Location = new System.Drawing.Point(116, 26);
-            this.tabUtil_IMEIConv_But.Name = "tabUtil_IMEIConv_But";
-            this.tabUtil_IMEIConv_But.Size = new System.Drawing.Size(117, 39);
-            this.tabUtil_IMEIConv_But.TabIndex = 11;
-            this.tabUtil_IMEIConv_But.Text = "Convert and Copy to Clipboard";
-            this.tabUtil_IMEIConv_But.UseVisualStyleBackColor = true;
-            // 
-            // crc_IMEIConv_TB
-            // 
-            this.crc_IMEIConv_TB.Location = new System.Drawing.Point(11, 54);
-            this.crc_IMEIConv_TB.Name = "crc_IMEIConv_TB";
-            this.crc_IMEIConv_TB.Size = new System.Drawing.Size(99, 21);
-            this.crc_IMEIConv_TB.TabIndex = 10;
-            // 
-            // crc_IMEIToSend_TB
-            // 
-            this.crc_IMEIToSend_TB.Location = new System.Drawing.Point(11, 26);
-            this.crc_IMEIToSend_TB.MaxLength = 14;
-            this.crc_IMEIToSend_TB.Name = "crc_IMEIToSend_TB";
-            this.crc_IMEIToSend_TB.Size = new System.Drawing.Size(99, 21);
-            this.crc_IMEIToSend_TB.TabIndex = 9;
-            this.crc_IMEIToSend_TB.Text = "3549200301";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(903, 24);
-            this.menuStrip1.TabIndex = 42;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionsToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.optionsToolStripMenuItem.Text = "Options";
-            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // tabSerial_rightClickContextMain
-            // 
-            this.tabSerial_rightClickContextMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rightClickClear,
-            this.toolStripSeparator1,
-            this.rightClick_DisplayText,
-            this.openLogContaingDirToolStripMenuItem,
-            this.openLogFileToolStripMenuItem});
-            this.tabSerial_rightClickContextMain.Name = "rightClickContextMain";
-            this.tabSerial_rightClickContextMain.Size = new System.Drawing.Size(197, 98);
-            // 
-            // rightClickClear
-            // 
-            this.rightClickClear.Name = "rightClickClear";
-            this.rightClickClear.Size = new System.Drawing.Size(196, 22);
-            this.rightClickClear.Text = "Clear";
-            this.rightClickClear.Click += new System.EventHandler(this.rightClickClear_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
-            // 
-            // rightClick_DisplayText
-            // 
-            this.rightClick_DisplayText.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tabSerial_rightClick_NoSpecial,
-            this.tabSerial_rightClick_Normal,
-            this.tabSerial_rightClick_AllButNL,
-            this.tabSerial_rightClick_AllHEX});
-            this.rightClick_DisplayText.Name = "rightClick_DisplayText";
-            this.rightClick_DisplayText.Size = new System.Drawing.Size(196, 22);
-            this.rightClick_DisplayText.Text = "Text Display Type";
-            // 
-            // tabSerial_rightClick_NoSpecial
-            // 
-            this.tabSerial_rightClick_NoSpecial.Name = "tabSerial_rightClick_NoSpecial";
-            this.tabSerial_rightClick_NoSpecial.Size = new System.Drawing.Size(201, 22);
-            this.tabSerial_rightClick_NoSpecial.Text = "No Special Characters";
-            this.tabSerial_rightClick_NoSpecial.Click += new System.EventHandler(this.rightClick_NoSpecial_Click);
-            // 
-            // tabSerial_rightClick_Normal
-            // 
-            this.tabSerial_rightClick_Normal.Name = "tabSerial_rightClick_Normal";
-            this.tabSerial_rightClick_Normal.Size = new System.Drawing.Size(201, 22);
-            this.tabSerial_rightClick_Normal.Text = "Normal";
-            this.tabSerial_rightClick_Normal.Click += new System.EventHandler(this.rightClick_Normal_Click);
-            // 
-            // tabSerial_rightClick_AllButNL
-            // 
-            this.tabSerial_rightClick_AllButNL.Name = "tabSerial_rightClick_AllButNL";
-            this.tabSerial_rightClick_AllButNL.Size = new System.Drawing.Size(201, 22);
-            this.tabSerial_rightClick_AllButNL.Text = "All HEX Except \\n and \\r";
-            this.tabSerial_rightClick_AllButNL.Click += new System.EventHandler(this.rightClick_AllButNL_Click);
-            // 
-            // tabSerial_rightClick_AllHEX
-            // 
-            this.tabSerial_rightClick_AllHEX.Name = "tabSerial_rightClick_AllHEX";
-            this.tabSerial_rightClick_AllHEX.Size = new System.Drawing.Size(201, 22);
-            this.tabSerial_rightClick_AllHEX.Text = "All HEX";
-            this.tabSerial_rightClick_AllHEX.Click += new System.EventHandler(this.rightClick_HEX_Click);
-            // 
-            // openLogContaingDirToolStripMenuItem
-            // 
-            this.openLogContaingDirToolStripMenuItem.Name = "openLogContaingDirToolStripMenuItem";
-            this.openLogContaingDirToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.openLogContaingDirToolStripMenuItem.Text = "Open Log Containg Dir";
-            this.openLogContaingDirToolStripMenuItem.Click += new System.EventHandler(this.openLogContaingDirToolStripMenuItem_Click);
-            // 
-            // openLogFileToolStripMenuItem
-            // 
-            this.openLogFileToolStripMenuItem.Name = "openLogFileToolStripMenuItem";
-            this.openLogFileToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.openLogFileToolStripMenuItem.Text = "Open Log File";
-            this.openLogFileToolStripMenuItem.Click += new System.EventHandler(this.openLogFileToolStripMenuItem_Click);
-            // 
-            // tabTcpClient_contextMenuStrip
-            // 
-            this.tabTcpClient_contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tabTcpClient_RightClick_Clear,
-            this.toolStripSeparator2,
-            this.toolStripMenuItem2,
-            this.tabTcpClient_RightClick_OpenDir,
-            this.tabTcpClient_RightClick_OpenFile});
-            this.tabTcpClient_contextMenuStrip.Name = "rightClickContextMain";
-            this.tabTcpClient_contextMenuStrip.Size = new System.Drawing.Size(197, 98);
-            // 
-            // tabTcpClient_RightClick_Clear
-            // 
-            this.tabTcpClient_RightClick_Clear.Name = "tabTcpClient_RightClick_Clear";
-            this.tabTcpClient_RightClick_Clear.Size = new System.Drawing.Size(196, 22);
-            this.tabTcpClient_RightClick_Clear.Text = "Clear";
-            this.tabTcpClient_RightClick_Clear.Click += new System.EventHandler(this.rightClickClear_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tabTcpClient_RightClick_TxtDisp_None,
-            this.tabTcpClient_RightClick_TxtDisp_Normal,
-            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL,
-            this.tabTcpClient_RightClick_TxtDisp_AllHex});
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(196, 22);
-            this.toolStripMenuItem2.Text = "Text Display Type";
-            // 
-            // tabTcpClient_RightClick_TxtDisp_None
-            // 
-            this.tabTcpClient_RightClick_TxtDisp_None.Name = "tabTcpClient_RightClick_TxtDisp_None";
-            this.tabTcpClient_RightClick_TxtDisp_None.Size = new System.Drawing.Size(201, 22);
-            this.tabTcpClient_RightClick_TxtDisp_None.Text = "No Special Characters";
-            this.tabTcpClient_RightClick_TxtDisp_None.Click += new System.EventHandler(this.rightClick_NoSpecial_Click);
-            // 
-            // tabTcpClient_RightClick_TxtDisp_Normal
-            // 
-            this.tabTcpClient_RightClick_TxtDisp_Normal.Name = "tabTcpClient_RightClick_TxtDisp_Normal";
-            this.tabTcpClient_RightClick_TxtDisp_Normal.Size = new System.Drawing.Size(201, 22);
-            this.tabTcpClient_RightClick_TxtDisp_Normal.Text = "Normal";
-            this.tabTcpClient_RightClick_TxtDisp_Normal.Click += new System.EventHandler(this.rightClick_Normal_Click);
-            // 
-            // tabTcpClient_RightClick_TxtDisp_AllHexExceptNL
-            // 
-            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL.Name = "tabTcpClient_RightClick_TxtDisp_AllHexExceptNL";
-            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL.Size = new System.Drawing.Size(201, 22);
-            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL.Text = "All HEX Except \\n and \\r";
-            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL.Click += new System.EventHandler(this.rightClick_AllButNL_Click);
-            // 
-            // tabTcpClient_RightClick_TxtDisp_AllHex
-            // 
-            this.tabTcpClient_RightClick_TxtDisp_AllHex.Name = "tabTcpClient_RightClick_TxtDisp_AllHex";
-            this.tabTcpClient_RightClick_TxtDisp_AllHex.Size = new System.Drawing.Size(201, 22);
-            this.tabTcpClient_RightClick_TxtDisp_AllHex.Text = "All HEX";
-            this.tabTcpClient_RightClick_TxtDisp_AllHex.Click += new System.EventHandler(this.rightClick_HEX_Click);
-            // 
-            // tabTcpClient_RightClick_OpenDir
-            // 
-            this.tabTcpClient_RightClick_OpenDir.Name = "tabTcpClient_RightClick_OpenDir";
-            this.tabTcpClient_RightClick_OpenDir.Size = new System.Drawing.Size(196, 22);
-            this.tabTcpClient_RightClick_OpenDir.Text = "Open Log Containg Dir";
-            this.tabTcpClient_RightClick_OpenDir.Click += new System.EventHandler(this.openLogContaingDirToolStripMenuItem_Click);
-            // 
-            // tabTcpClient_RightClick_OpenFile
-            // 
-            this.tabTcpClient_RightClick_OpenFile.Name = "tabTcpClient_RightClick_OpenFile";
-            this.tabTcpClient_RightClick_OpenFile.Size = new System.Drawing.Size(196, 22);
-            this.tabTcpClient_RightClick_OpenFile.Text = "Open Log File";
-            this.tabTcpClient_RightClick_OpenFile.Click += new System.EventHandler(this.openLogFileToolStripMenuItem_Click);
-            // 
-            // tabTcpSvr_contextMenuStrip
-            // 
-            this.tabTcpSvr_contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tabTcpSvr_RightClick_Clear,
-            this.toolStripSeparator3,
-            this.toolStripMenuItem3,
-            this.tabTcpSvr_RightClick_OpenDir,
-            this.tabTcpSvr_RightClick_OpenFile});
-            this.tabTcpSvr_contextMenuStrip.Name = "rightClickContextMain";
-            this.tabTcpSvr_contextMenuStrip.Size = new System.Drawing.Size(197, 98);
-            // 
-            // tabTcpSvr_RightClick_Clear
-            // 
-            this.tabTcpSvr_RightClick_Clear.Name = "tabTcpSvr_RightClick_Clear";
-            this.tabTcpSvr_RightClick_Clear.Size = new System.Drawing.Size(196, 22);
-            this.tabTcpSvr_RightClick_Clear.Text = "Clear";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(193, 6);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tabTcpSvr_RightClick_TxtDisp_None,
-            this.tabTcpSvr_RightClick_TxtDisp_Normal,
-            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL,
-            this.tabTcpSvr_RightClick_TxtDisp_AllHex});
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(196, 22);
-            this.toolStripMenuItem3.Text = "Text Display Type";
-            // 
-            // tabTcpSvr_RightClick_TxtDisp_None
-            // 
-            this.tabTcpSvr_RightClick_TxtDisp_None.Name = "tabTcpSvr_RightClick_TxtDisp_None";
-            this.tabTcpSvr_RightClick_TxtDisp_None.Size = new System.Drawing.Size(201, 22);
-            this.tabTcpSvr_RightClick_TxtDisp_None.Text = "No Special Characters";
-            this.tabTcpSvr_RightClick_TxtDisp_None.Click += new System.EventHandler(this.rightClick_NoSpecial_Click);
-            // 
-            // tabTcpSvr_RightClick_TxtDisp_Normal
-            // 
-            this.tabTcpSvr_RightClick_TxtDisp_Normal.Name = "tabTcpSvr_RightClick_TxtDisp_Normal";
-            this.tabTcpSvr_RightClick_TxtDisp_Normal.Size = new System.Drawing.Size(201, 22);
-            this.tabTcpSvr_RightClick_TxtDisp_Normal.Text = "Normal";
-            this.tabTcpSvr_RightClick_TxtDisp_Normal.Click += new System.EventHandler(this.rightClick_Normal_Click);
-            // 
-            // tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL
-            // 
-            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL.Name = "tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL";
-            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL.Size = new System.Drawing.Size(201, 22);
-            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL.Text = "All HEX Except \\n and \\r";
-            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL.Click += new System.EventHandler(this.rightClick_AllButNL_Click);
-            // 
-            // tabTcpSvr_RightClick_TxtDisp_AllHex
-            // 
-            this.tabTcpSvr_RightClick_TxtDisp_AllHex.Name = "tabTcpSvr_RightClick_TxtDisp_AllHex";
-            this.tabTcpSvr_RightClick_TxtDisp_AllHex.Size = new System.Drawing.Size(201, 22);
-            this.tabTcpSvr_RightClick_TxtDisp_AllHex.Text = "All HEX";
-            this.tabTcpSvr_RightClick_TxtDisp_AllHex.Click += new System.EventHandler(this.rightClick_HEX_Click);
-            // 
-            // tabTcpSvr_RightClick_OpenDir
-            // 
-            this.tabTcpSvr_RightClick_OpenDir.Name = "tabTcpSvr_RightClick_OpenDir";
-            this.tabTcpSvr_RightClick_OpenDir.Size = new System.Drawing.Size(196, 22);
-            this.tabTcpSvr_RightClick_OpenDir.Text = "Open Log Containg Dir";
-            this.tabTcpSvr_RightClick_OpenDir.Click += new System.EventHandler(this.openLogContaingDirToolStripMenuItem_Click);
-            // 
-            // tabTcpSvr_RightClick_OpenFile
-            // 
-            this.tabTcpSvr_RightClick_OpenFile.Name = "tabTcpSvr_RightClick_OpenFile";
-            this.tabTcpSvr_RightClick_OpenFile.Size = new System.Drawing.Size(196, 22);
-            this.tabTcpSvr_RightClick_OpenFile.Text = "Open Log File";
-            this.tabTcpSvr_RightClick_OpenFile.Click += new System.EventHandler(this.openLogFileToolStripMenuItem_Click);
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.tabUdpClient_tbLog.BackColor = System.Drawing.SystemColors.Window;
+            this.tabUdpClient_tbLog.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabUdpClient_tbLog.Location = new System.Drawing.Point(0, 0);
+            this.tabUdpClient_tbLog.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabUdpClient_tbLog.Name = "tabUdpClient_tbLog";
+            this.tabUdpClient_tbLog.ReadOnly = true;
+            this.tabUdpClient_tbLog.Size = new System.Drawing.Size(894, 261);
+            this.tabUdpClient_tbLog.TabIndex = 128;
+            this.tabUdpClient_tbLog.Text = "";
+            // 
+            // label93
+            // 
+            this.label93.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label93.AutoSize = true;
+            this.label93.Location = new System.Drawing.Point(6, 347);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(29, 14);
+            this.label93.TabIndex = 127;
+            this.label93.Text = "Port";
+            // 
+            // tabUdpClient_tbPort
+            // 
+            this.tabUdpClient_tbPort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tabUdpClient_tbPort.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.tabUdpClient_tbPort.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.tabUdpClient_tbPort.Location = new System.Drawing.Point(41, 344);
+            this.tabUdpClient_tbPort.MaxLength = 5;
+            this.tabUdpClient_tbPort.Name = "tabUdpClient_tbPort";
+            this.tabUdpClient_tbPort.Size = new System.Drawing.Size(49, 21);
+            this.tabUdpClient_tbPort.TabIndex = 126;
+            this.tabUdpClient_tbPort.Text = "580";
+            // 
+            // label94
+            // 
+            this.label94.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label94.AutoSize = true;
+            this.label94.Location = new System.Drawing.Point(3, 303);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(62, 14);
+            this.label94.TabIndex = 124;
+            this.label94.Text = "IP Address";
+            // 
+            // tabUdpClient_tbIPAddr
+            // 
+            this.tabUdpClient_tbIPAddr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tabUdpClient_tbIPAddr.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.tabUdpClient_tbIPAddr.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.tabUdpClient_tbIPAddr.Location = new System.Drawing.Point(3, 321);
+            this.tabUdpClient_tbIPAddr.Name = "tabUdpClient_tbIPAddr";
+            this.tabUdpClient_tbIPAddr.Size = new System.Drawing.Size(153, 21);
+            this.tabUdpClient_tbIPAddr.TabIndex = 123;
+            // 
+            // tabUdpClient_butOpen
+            // 
+            this.tabUdpClient_butOpen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tabUdpClient_butOpen.Location = new System.Drawing.Point(2, 268);
+            this.tabUdpClient_butOpen.Name = "tabUdpClient_butOpen";
+            this.tabUdpClient_butOpen.Size = new System.Drawing.Size(46, 24);
+            this.tabUdpClient_butOpen.TabIndex = 125;
+            this.tabUdpClient_butOpen.Text = "Open";
+            this.tabUdpClient_butOpen.UseVisualStyleBackColor = true;
+            // 
+            // tabUdpClient_splitContainer
+            // 
+            this.tabUdpClient_splitContainer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.IsSplitterFixed = true;
-            this.splitContainer1.Location = new System.Drawing.Point(162, 262);
-            this.splitContainer1.Name = "splitContainer1";
+            this.tabUdpClient_splitContainer.IsSplitterFixed = true;
+            this.tabUdpClient_splitContainer.Location = new System.Drawing.Point(162, 262);
+            this.tabUdpClient_splitContainer.Name = "tabUdpClient_splitContainer";
             // 
-            // splitContainer1.Panel1
+            // tabUdpClient_splitContainer.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_butSend1);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbLFSend8);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbLFSend7);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbLFSend6);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbLFSend5);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbLFSend4);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbLFSend3);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbLFSend2);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbLFSend1);
-            this.splitContainer1.Panel1.Controls.Add(this.label74);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbHexSend8);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbHexSend7);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbHexSend6);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbHexSend5);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbHexSend4);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbHexSend3);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbHexSend2);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_cbHexSend1);
-            this.splitContainer1.Panel1.Controls.Add(this.label75);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_tbSend1);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_tbSend6);
-            this.splitContainer1.Panel1.Controls.Add(this.label76);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_butSend7);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_butSend6);
-            this.splitContainer1.Panel1.Controls.Add(this.label77);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_tbSend7);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_butSend2);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_tbSend5);
-            this.splitContainer1.Panel1.Controls.Add(this.label78);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_butSend8);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_tbSend2);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_butSend5);
-            this.splitContainer1.Panel1.Controls.Add(this.label79);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_tbSend8);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_butSend3);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_tbSend4);
-            this.splitContainer1.Panel1.Controls.Add(this.label80);
-            this.splitContainer1.Panel1.Controls.Add(this.label81);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_tbSend3);
-            this.splitContainer1.Panel1.Controls.Add(this.tabUdpClient_butSend4);
-            this.splitContainer1.Panel1.Controls.Add(this.label82);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_butSend1);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbLFSend8);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbLFSend7);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbLFSend6);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbLFSend5);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbLFSend4);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbLFSend3);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbLFSend2);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbLFSend1);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label74);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbHexSend8);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbHexSend7);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbHexSend6);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbHexSend5);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbHexSend4);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbHexSend3);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbHexSend2);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_cbHexSend1);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label75);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_tbSend1);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_tbSend6);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label76);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_butSend7);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_butSend6);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label77);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_tbSend7);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_butSend2);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_tbSend5);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label78);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_butSend8);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_tbSend2);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_butSend5);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label79);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_tbSend8);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_butSend3);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_tbSend4);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label80);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label81);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_tbSend3);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.tabUdpClient_butSend4);
+            this.tabUdpClient_splitContainer.Panel1.Controls.Add(this.label82);
             // 
-            // splitContainer1.Panel2
+            // tabUdpClient_splitContainer.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_butSend9);
-            this.splitContainer1.Panel2.Controls.Add(this.label83);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbLFSend16);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbLFSend15);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbHexSend16);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbLFSend14);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_tbSend9);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbLFSend13);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbHexSend15);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbLFSend12);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbLFSend11);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbHexSend14);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbLFSend10);
-            this.splitContainer1.Panel2.Controls.Add(this.label84);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbLFSend9);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbHexSend13);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_butSend10);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbHexSend12);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_tbSend16);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbHexSend11);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_tbSend10);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbHexSend10);
-            this.splitContainer1.Panel2.Controls.Add(this.label85);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_cbHexSend9);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_butSend11);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_butSend16);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_tbSend11);
-            this.splitContainer1.Panel2.Controls.Add(this.label86);
-            this.splitContainer1.Panel2.Controls.Add(this.label87);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_tbSend15);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_butSend12);
-            this.splitContainer1.Panel2.Controls.Add(this.label88);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_tbSend12);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_butSend15);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_butSend13);
-            this.splitContainer1.Panel2.Controls.Add(this.label89);
-            this.splitContainer1.Panel2.Controls.Add(this.label90);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_tbSend14);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_tbSend13);
-            this.splitContainer1.Panel2.Controls.Add(this.label91);
-            this.splitContainer1.Panel2.Controls.Add(this.label92);
-            this.splitContainer1.Panel2.Controls.Add(this.tabUdpClient_butSend14);
-            this.splitContainer1.Size = new System.Drawing.Size(732, 235);
-            this.splitContainer1.SplitterDistance = 366;
-            this.splitContainer1.TabIndex = 122;
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_butSend9);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label83);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbLFSend16);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbLFSend15);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbHexSend16);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbLFSend14);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_tbSend9);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbLFSend13);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbHexSend15);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbLFSend12);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbLFSend11);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbHexSend14);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbLFSend10);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label84);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbLFSend9);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbHexSend13);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_butSend10);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbHexSend12);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_tbSend16);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbHexSend11);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_tbSend10);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbHexSend10);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label85);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_cbHexSend9);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_butSend11);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_butSend16);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_tbSend11);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label86);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label87);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_tbSend15);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_butSend12);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label88);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_tbSend12);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_butSend15);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_butSend13);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label89);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label90);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_tbSend14);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_tbSend13);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label91);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.label92);
+            this.tabUdpClient_splitContainer.Panel2.Controls.Add(this.tabUdpClient_butSend14);
+            this.tabUdpClient_splitContainer.Size = new System.Drawing.Size(732, 235);
+            this.tabUdpClient_splitContainer.SplitterDistance = 366;
+            this.tabUdpClient_splitContainer.TabIndex = 122;
             // 
             // tabUdpClient_butSend1
             // 
@@ -5520,95 +5083,612 @@
             this.tabUdpClient_butSend14.Text = "Send";
             this.tabUdpClient_butSend14.UseVisualStyleBackColor = true;
             // 
-            // tabUdpClient_butClear
+            // tabProgram
             // 
-            this.tabUdpClient_butClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tabUdpClient_butClear.Location = new System.Drawing.Point(110, 268);
-            this.tabUdpClient_butClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabUdpClient_butClear.Name = "tabUdpClient_butClear";
-            this.tabUdpClient_butClear.Size = new System.Drawing.Size(46, 24);
-            this.tabUdpClient_butClear.TabIndex = 130;
-            this.tabUdpClient_butClear.Text = "Clear";
-            this.tabUdpClient_butClear.UseVisualStyleBackColor = true;
+            this.tabProgram.BackColor = System.Drawing.SystemColors.Control;
+            this.tabProgram.Controls.Add(this.label51);
+            this.tabProgram.Controls.Add(this.tabProg_tbSpiFile);
+            this.tabProgram.Controls.Add(this.tabProg_butSpiBrowse);
+            this.tabProgram.Controls.Add(this.tabProg_ButClearLog);
+            this.tabProgram.Controls.Add(this.tabProg_butSpiStop);
+            this.tabProgram.Controls.Add(this.prog_Log_TB);
+            this.tabProgram.Controls.Add(this.tabProg_butSpiStart);
+            this.tabProgram.Location = new System.Drawing.Point(4, 23);
+            this.tabProgram.Name = "tabProgram";
+            this.tabProgram.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProgram.Size = new System.Drawing.Size(897, 497);
+            this.tabProgram.TabIndex = 4;
+            this.tabProgram.Text = "Programmer";
             // 
-            // tabUdpClient_butClose
+            // label51
             // 
-            this.tabUdpClient_butClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tabUdpClient_butClose.Enabled = false;
-            this.tabUdpClient_butClose.Location = new System.Drawing.Point(57, 268);
-            this.tabUdpClient_butClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabUdpClient_butClose.Name = "tabUdpClient_butClose";
-            this.tabUdpClient_butClose.Size = new System.Drawing.Size(46, 24);
-            this.tabUdpClient_butClose.TabIndex = 129;
-            this.tabUdpClient_butClose.Text = "Close";
-            this.tabUdpClient_butClose.UseVisualStyleBackColor = true;
+            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(602, 10);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(71, 14);
+            this.label51.TabIndex = 16;
+            this.label51.Text = "Program SPI";
             // 
-            // tabUdpClient_tbLog
+            // tabProg_tbSpiFile
             // 
-            this.tabUdpClient_tbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabProg_tbSpiFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabProg_tbSpiFile.Location = new System.Drawing.Point(605, 27);
+            this.tabProg_tbSpiFile.Name = "tabProg_tbSpiFile";
+            this.tabProg_tbSpiFile.Size = new System.Drawing.Size(134, 21);
+            this.tabProg_tbSpiFile.TabIndex = 15;
+            // 
+            // tabProg_butSpiBrowse
+            // 
+            this.tabProg_butSpiBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabProg_butSpiBrowse.Location = new System.Drawing.Point(605, 54);
+            this.tabProg_butSpiBrowse.Name = "tabProg_butSpiBrowse";
+            this.tabProg_butSpiBrowse.Size = new System.Drawing.Size(75, 23);
+            this.tabProg_butSpiBrowse.TabIndex = 14;
+            this.tabProg_butSpiBrowse.Text = "Browse";
+            this.tabProg_butSpiBrowse.UseVisualStyleBackColor = true;
+            // 
+            // tabProg_ButClearLog
+            // 
+            this.tabProg_ButClearLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabProg_ButClearLog.Location = new System.Drawing.Point(605, 468);
+            this.tabProg_ButClearLog.Name = "tabProg_ButClearLog";
+            this.tabProg_ButClearLog.Size = new System.Drawing.Size(75, 23);
+            this.tabProg_ButClearLog.TabIndex = 10;
+            this.tabProg_ButClearLog.Text = "Clear";
+            this.tabProg_ButClearLog.UseVisualStyleBackColor = true;
+            // 
+            // tabProg_butSpiStop
+            // 
+            this.tabProg_butSpiStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabProg_butSpiStop.Enabled = false;
+            this.tabProg_butSpiStop.Location = new System.Drawing.Point(686, 468);
+            this.tabProg_butSpiStop.Name = "tabProg_butSpiStop";
+            this.tabProg_butSpiStop.Size = new System.Drawing.Size(75, 23);
+            this.tabProg_butSpiStop.TabIndex = 9;
+            this.tabProg_butSpiStop.Text = "Stop";
+            this.tabProg_butSpiStop.UseVisualStyleBackColor = true;
+            // 
+            // prog_Log_TB
+            // 
+            this.prog_Log_TB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabUdpClient_tbLog.BackColor = System.Drawing.SystemColors.Window;
-            this.tabUdpClient_tbLog.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabUdpClient_tbLog.Location = new System.Drawing.Point(0, 0);
-            this.tabUdpClient_tbLog.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabUdpClient_tbLog.Name = "tabUdpClient_tbLog";
-            this.tabUdpClient_tbLog.ReadOnly = true;
-            this.tabUdpClient_tbLog.Size = new System.Drawing.Size(894, 261);
-            this.tabUdpClient_tbLog.TabIndex = 128;
-            this.tabUdpClient_tbLog.Text = "";
+            this.prog_Log_TB.BackColor = System.Drawing.SystemColors.Window;
+            this.prog_Log_TB.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prog_Log_TB.Location = new System.Drawing.Point(4, 7);
+            this.prog_Log_TB.Name = "prog_Log_TB";
+            this.prog_Log_TB.ReadOnly = true;
+            this.prog_Log_TB.Size = new System.Drawing.Size(592, 490);
+            this.prog_Log_TB.TabIndex = 1;
+            this.prog_Log_TB.Text = "";
             // 
-            // label93
+            // tabProg_butSpiStart
             // 
-            this.label93.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(6, 347);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(29, 14);
-            this.label93.TabIndex = 127;
-            this.label93.Text = "Port";
+            this.tabProg_butSpiStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabProg_butSpiStart.Location = new System.Drawing.Point(759, 27);
+            this.tabProg_butSpiStart.Name = "tabProg_butSpiStart";
+            this.tabProg_butSpiStart.Size = new System.Drawing.Size(127, 23);
+            this.tabProg_butSpiStart.TabIndex = 0;
+            this.tabProg_butSpiStart.Text = "Program SPI";
+            this.tabProg_butSpiStart.UseVisualStyleBackColor = true;
             // 
-            // tabUdpClient_tbPort
+            // tabUtil
             // 
-            this.tabUdpClient_tbPort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tabUdpClient_tbPort.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.tabUdpClient_tbPort.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.tabUdpClient_tbPort.Location = new System.Drawing.Point(41, 344);
-            this.tabUdpClient_tbPort.MaxLength = 5;
-            this.tabUdpClient_tbPort.Name = "tabUdpClient_tbPort";
-            this.tabUdpClient_tbPort.Size = new System.Drawing.Size(49, 21);
-            this.tabUdpClient_tbPort.TabIndex = 126;
-            this.tabUdpClient_tbPort.Text = "580";
+            this.tabUtil.BackColor = System.Drawing.SystemColors.Control;
+            this.tabUtil.Controls.Add(this.label71);
+            this.tabUtil.Controls.Add(this.tabUtil_butCrcHexAscii);
+            this.tabUtil.Controls.Add(this.tabUtil_tbCrcHexAsciiAnswer);
+            this.tabUtil.Controls.Add(this.tabUtil_tbCrcHexAsciiEntry);
+            this.tabUtil.Controls.Add(this.label70);
+            this.tabUtil.Controls.Add(this.tabUtil_butCrcAscii);
+            this.tabUtil.Controls.Add(this.tabUtil_tbCrcAsciiAnswer);
+            this.tabUtil.Controls.Add(this.tabUtil_tbCrcAsciiEntry);
+            this.tabUtil.Controls.Add(this.tabUtil_butSimGetInfo);
+            this.tabUtil.Controls.Add(this.tabUtil_tbSimOutput);
+            this.tabUtil.Controls.Add(this.label47);
+            this.tabUtil.Controls.Add(this.tabUtil_tbSimInput);
+            this.tabUtil.Controls.Add(this.label22);
+            this.tabUtil.Controls.Add(this.tabUtil_IMEIConv_But);
+            this.tabUtil.Controls.Add(this.crc_IMEIConv_TB);
+            this.tabUtil.Controls.Add(this.crc_IMEIToSend_TB);
+            this.tabUtil.Location = new System.Drawing.Point(4, 23);
+            this.tabUtil.Name = "tabUtil";
+            this.tabUtil.Padding = new System.Windows.Forms.Padding(3);
+            this.tabUtil.Size = new System.Drawing.Size(897, 497);
+            this.tabUtil.TabIndex = 3;
+            this.tabUtil.Text = "Utilities";
             // 
-            // label94
+            // label71
             // 
-            this.label94.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(3, 303);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(62, 14);
-            this.label94.TabIndex = 124;
-            this.label94.Text = "IP Address";
+            this.label71.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(666, 117);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(154, 14);
+            this.label71.TabIndex = 25;
+            this.label71.Text = "Get CRC from ascii hex bytes";
             // 
-            // tabUdpClient_tbIPAddr
+            // tabUtil_butCrcHexAscii
             // 
-            this.tabUdpClient_tbIPAddr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tabUdpClient_tbIPAddr.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.tabUdpClient_tbIPAddr.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.tabUdpClient_tbIPAddr.Location = new System.Drawing.Point(3, 321);
-            this.tabUdpClient_tbIPAddr.Name = "tabUdpClient_tbIPAddr";
-            this.tabUdpClient_tbIPAddr.Size = new System.Drawing.Size(153, 21);
-            this.tabUdpClient_tbIPAddr.TabIndex = 123;
+            this.tabUtil_butCrcHexAscii.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabUtil_butCrcHexAscii.Location = new System.Drawing.Point(774, 134);
+            this.tabUtil_butCrcHexAscii.Name = "tabUtil_butCrcHexAscii";
+            this.tabUtil_butCrcHexAscii.Size = new System.Drawing.Size(95, 26);
+            this.tabUtil_butCrcHexAscii.TabIndex = 24;
+            this.tabUtil_butCrcHexAscii.Text = "Calc CRC Hex";
+            this.tabUtil_butCrcHexAscii.UseVisualStyleBackColor = true;
             // 
-            // tabUdpClient_butOpen
+            // tabUtil_tbCrcHexAsciiAnswer
             // 
-            this.tabUdpClient_butOpen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tabUdpClient_butOpen.Location = new System.Drawing.Point(2, 268);
-            this.tabUdpClient_butOpen.Name = "tabUdpClient_butOpen";
-            this.tabUdpClient_butOpen.Size = new System.Drawing.Size(46, 24);
-            this.tabUdpClient_butOpen.TabIndex = 125;
-            this.tabUdpClient_butOpen.Text = "Open";
-            this.tabUdpClient_butOpen.UseVisualStyleBackColor = true;
+            this.tabUtil_tbCrcHexAsciiAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabUtil_tbCrcHexAsciiAnswer.Location = new System.Drawing.Point(669, 162);
+            this.tabUtil_tbCrcHexAsciiAnswer.Name = "tabUtil_tbCrcHexAsciiAnswer";
+            this.tabUtil_tbCrcHexAsciiAnswer.Size = new System.Drawing.Size(99, 21);
+            this.tabUtil_tbCrcHexAsciiAnswer.TabIndex = 23;
+            // 
+            // tabUtil_tbCrcHexAsciiEntry
+            // 
+            this.tabUtil_tbCrcHexAsciiEntry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabUtil_tbCrcHexAsciiEntry.Location = new System.Drawing.Point(669, 134);
+            this.tabUtil_tbCrcHexAsciiEntry.MaxLength = 32768;
+            this.tabUtil_tbCrcHexAsciiEntry.Name = "tabUtil_tbCrcHexAsciiEntry";
+            this.tabUtil_tbCrcHexAsciiEntry.Size = new System.Drawing.Size(99, 21);
+            this.tabUtil_tbCrcHexAsciiEntry.TabIndex = 22;
+            this.tabUtil_tbCrcHexAsciiEntry.Text = "12 A5 44 9E";
+            // 
+            // label70
+            // 
+            this.label70.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(666, 9);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(102, 14);
+            this.label70.TabIndex = 21;
+            this.label70.Text = "Get CRC from ascii";
+            // 
+            // tabUtil_butCrcAscii
+            // 
+            this.tabUtil_butCrcAscii.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabUtil_butCrcAscii.Location = new System.Drawing.Point(774, 26);
+            this.tabUtil_butCrcAscii.Name = "tabUtil_butCrcAscii";
+            this.tabUtil_butCrcAscii.Size = new System.Drawing.Size(117, 39);
+            this.tabUtil_butCrcAscii.TabIndex = 20;
+            this.tabUtil_butCrcAscii.Text = "Calc CRC in ASCII hex and Clipboard";
+            this.tabUtil_butCrcAscii.UseVisualStyleBackColor = true;
+            // 
+            // tabUtil_tbCrcAsciiAnswer
+            // 
+            this.tabUtil_tbCrcAsciiAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabUtil_tbCrcAsciiAnswer.Location = new System.Drawing.Point(669, 54);
+            this.tabUtil_tbCrcAsciiAnswer.Name = "tabUtil_tbCrcAsciiAnswer";
+            this.tabUtil_tbCrcAsciiAnswer.Size = new System.Drawing.Size(99, 21);
+            this.tabUtil_tbCrcAsciiAnswer.TabIndex = 19;
+            // 
+            // tabUtil_tbCrcAsciiEntry
+            // 
+            this.tabUtil_tbCrcAsciiEntry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabUtil_tbCrcAsciiEntry.Location = new System.Drawing.Point(669, 26);
+            this.tabUtil_tbCrcAsciiEntry.MaxLength = 14;
+            this.tabUtil_tbCrcAsciiEntry.Name = "tabUtil_tbCrcAsciiEntry";
+            this.tabUtil_tbCrcAsciiEntry.Size = new System.Drawing.Size(99, 21);
+            this.tabUtil_tbCrcAsciiEntry.TabIndex = 18;
+            this.tabUtil_tbCrcAsciiEntry.Text = "$S1234";
+            // 
+            // tabUtil_butSimGetInfo
+            // 
+            this.tabUtil_butSimGetInfo.Location = new System.Drawing.Point(151, 162);
+            this.tabUtil_butSimGetInfo.Name = "tabUtil_butSimGetInfo";
+            this.tabUtil_butSimGetInfo.Size = new System.Drawing.Size(82, 22);
+            this.tabUtil_butSimGetInfo.TabIndex = 17;
+            this.tabUtil_butSimGetInfo.Text = "Get Sim Info";
+            this.tabUtil_butSimGetInfo.UseVisualStyleBackColor = true;
+            // 
+            // tabUtil_tbSimOutput
+            // 
+            this.tabUtil_tbSimOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabUtil_tbSimOutput.Location = new System.Drawing.Point(11, 191);
+            this.tabUtil_tbSimOutput.Name = "tabUtil_tbSimOutput";
+            this.tabUtil_tbSimOutput.Size = new System.Drawing.Size(281, 96);
+            this.tabUtil_tbSimOutput.TabIndex = 16;
+            this.tabUtil_tbSimOutput.Text = "";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(12, 146);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(346, 14);
+            this.label47.TabIndex = 15;
+            this.label47.Text = "Enter a 19 or 20 digit Sim num (ICCID) and look at the breakdown";
+            // 
+            // tabUtil_tbSimInput
+            // 
+            this.tabUtil_tbSimInput.Location = new System.Drawing.Point(12, 163);
+            this.tabUtil_tbSimInput.MaxLength = 20;
+            this.tabUtil_tbSimInput.Name = "tabUtil_tbSimInput";
+            this.tabUtil_tbSimInput.Size = new System.Drawing.Size(133, 21);
+            this.tabUtil_tbSimInput.TabIndex = 13;
+            this.tabUtil_tbSimInput.Text = "89610146614609000029";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(8, 9);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(218, 14);
+            this.label22.TabIndex = 12;
+            this.label22.Text = "Enter 14 digit IMEI. Get the CRC last digit";
+            // 
+            // tabUtil_IMEIConv_But
+            // 
+            this.tabUtil_IMEIConv_But.Location = new System.Drawing.Point(116, 26);
+            this.tabUtil_IMEIConv_But.Name = "tabUtil_IMEIConv_But";
+            this.tabUtil_IMEIConv_But.Size = new System.Drawing.Size(117, 39);
+            this.tabUtil_IMEIConv_But.TabIndex = 11;
+            this.tabUtil_IMEIConv_But.Text = "Convert and Copy to Clipboard";
+            this.tabUtil_IMEIConv_But.UseVisualStyleBackColor = true;
+            // 
+            // crc_IMEIConv_TB
+            // 
+            this.crc_IMEIConv_TB.Location = new System.Drawing.Point(11, 54);
+            this.crc_IMEIConv_TB.Name = "crc_IMEIConv_TB";
+            this.crc_IMEIConv_TB.Size = new System.Drawing.Size(99, 21);
+            this.crc_IMEIConv_TB.TabIndex = 10;
+            // 
+            // crc_IMEIToSend_TB
+            // 
+            this.crc_IMEIToSend_TB.Location = new System.Drawing.Point(11, 26);
+            this.crc_IMEIToSend_TB.MaxLength = 14;
+            this.crc_IMEIToSend_TB.Name = "crc_IMEIToSend_TB";
+            this.crc_IMEIToSend_TB.Size = new System.Drawing.Size(99, 21);
+            this.crc_IMEIToSend_TB.TabIndex = 9;
+            this.crc_IMEIToSend_TB.Text = "3549200301";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(903, 24);
+            this.menuStrip1.TabIndex = 42;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionsToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.optionsToolStripMenuItem.Text = "Options";
+            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // tabSerial_rightClickContextMain
+            // 
+            this.tabSerial_rightClickContextMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rightClickClear,
+            this.toolStripSeparator1,
+            this.rightClick_DisplayText,
+            this.openLogContaingDirToolStripMenuItem,
+            this.openLogFileToolStripMenuItem});
+            this.tabSerial_rightClickContextMain.Name = "rightClickContextMain";
+            this.tabSerial_rightClickContextMain.Size = new System.Drawing.Size(197, 98);
+            // 
+            // rightClickClear
+            // 
+            this.rightClickClear.Name = "rightClickClear";
+            this.rightClickClear.Size = new System.Drawing.Size(196, 22);
+            this.rightClickClear.Text = "Clear";
+            this.rightClickClear.Click += new System.EventHandler(this.rightClickClear_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            // 
+            // rightClick_DisplayText
+            // 
+            this.rightClick_DisplayText.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tabSerial_rightClick_NoSpecial,
+            this.tabSerial_rightClick_Normal,
+            this.tabSerial_rightClick_AllButNL,
+            this.tabSerial_rightClick_AllHEX});
+            this.rightClick_DisplayText.Name = "rightClick_DisplayText";
+            this.rightClick_DisplayText.Size = new System.Drawing.Size(196, 22);
+            this.rightClick_DisplayText.Text = "Text Display Type";
+            // 
+            // tabSerial_rightClick_NoSpecial
+            // 
+            this.tabSerial_rightClick_NoSpecial.Name = "tabSerial_rightClick_NoSpecial";
+            this.tabSerial_rightClick_NoSpecial.Size = new System.Drawing.Size(201, 22);
+            this.tabSerial_rightClick_NoSpecial.Text = "No Special Characters";
+            this.tabSerial_rightClick_NoSpecial.Click += new System.EventHandler(this.rightClick_NoSpecial_Click);
+            // 
+            // tabSerial_rightClick_Normal
+            // 
+            this.tabSerial_rightClick_Normal.Name = "tabSerial_rightClick_Normal";
+            this.tabSerial_rightClick_Normal.Size = new System.Drawing.Size(201, 22);
+            this.tabSerial_rightClick_Normal.Text = "Normal";
+            this.tabSerial_rightClick_Normal.Click += new System.EventHandler(this.rightClick_Normal_Click);
+            // 
+            // tabSerial_rightClick_AllButNL
+            // 
+            this.tabSerial_rightClick_AllButNL.Name = "tabSerial_rightClick_AllButNL";
+            this.tabSerial_rightClick_AllButNL.Size = new System.Drawing.Size(201, 22);
+            this.tabSerial_rightClick_AllButNL.Text = "All HEX Except \\n and \\r";
+            this.tabSerial_rightClick_AllButNL.Click += new System.EventHandler(this.rightClick_AllButNL_Click);
+            // 
+            // tabSerial_rightClick_AllHEX
+            // 
+            this.tabSerial_rightClick_AllHEX.Name = "tabSerial_rightClick_AllHEX";
+            this.tabSerial_rightClick_AllHEX.Size = new System.Drawing.Size(201, 22);
+            this.tabSerial_rightClick_AllHEX.Text = "All HEX";
+            this.tabSerial_rightClick_AllHEX.Click += new System.EventHandler(this.rightClick_HEX_Click);
+            // 
+            // openLogContaingDirToolStripMenuItem
+            // 
+            this.openLogContaingDirToolStripMenuItem.Name = "openLogContaingDirToolStripMenuItem";
+            this.openLogContaingDirToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.openLogContaingDirToolStripMenuItem.Text = "Open Log Containg Dir";
+            this.openLogContaingDirToolStripMenuItem.Click += new System.EventHandler(this.openLogContaingDirToolStripMenuItem_Click);
+            // 
+            // openLogFileToolStripMenuItem
+            // 
+            this.openLogFileToolStripMenuItem.Name = "openLogFileToolStripMenuItem";
+            this.openLogFileToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.openLogFileToolStripMenuItem.Text = "Open Log File";
+            this.openLogFileToolStripMenuItem.Click += new System.EventHandler(this.openLogFileToolStripMenuItem_Click);
+            // 
+            // tabTcpClient_contextMenuStrip
+            // 
+            this.tabTcpClient_contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tabTcpClient_RightClick_Clear,
+            this.toolStripSeparator2,
+            this.toolStripMenuItem2,
+            this.tabTcpClient_RightClick_OpenDir,
+            this.tabTcpClient_RightClick_OpenFile});
+            this.tabTcpClient_contextMenuStrip.Name = "rightClickContextMain";
+            this.tabTcpClient_contextMenuStrip.Size = new System.Drawing.Size(197, 98);
+            // 
+            // tabTcpClient_RightClick_Clear
+            // 
+            this.tabTcpClient_RightClick_Clear.Name = "tabTcpClient_RightClick_Clear";
+            this.tabTcpClient_RightClick_Clear.Size = new System.Drawing.Size(196, 22);
+            this.tabTcpClient_RightClick_Clear.Text = "Clear";
+            this.tabTcpClient_RightClick_Clear.Click += new System.EventHandler(this.rightClickClear_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tabTcpClient_RightClick_TxtDisp_None,
+            this.tabTcpClient_RightClick_TxtDisp_Normal,
+            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL,
+            this.tabTcpClient_RightClick_TxtDisp_AllHex});
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(196, 22);
+            this.toolStripMenuItem2.Text = "Text Display Type";
+            // 
+            // tabTcpClient_RightClick_TxtDisp_None
+            // 
+            this.tabTcpClient_RightClick_TxtDisp_None.Name = "tabTcpClient_RightClick_TxtDisp_None";
+            this.tabTcpClient_RightClick_TxtDisp_None.Size = new System.Drawing.Size(201, 22);
+            this.tabTcpClient_RightClick_TxtDisp_None.Text = "No Special Characters";
+            this.tabTcpClient_RightClick_TxtDisp_None.Click += new System.EventHandler(this.rightClick_NoSpecial_Click);
+            // 
+            // tabTcpClient_RightClick_TxtDisp_Normal
+            // 
+            this.tabTcpClient_RightClick_TxtDisp_Normal.Name = "tabTcpClient_RightClick_TxtDisp_Normal";
+            this.tabTcpClient_RightClick_TxtDisp_Normal.Size = new System.Drawing.Size(201, 22);
+            this.tabTcpClient_RightClick_TxtDisp_Normal.Text = "Normal";
+            this.tabTcpClient_RightClick_TxtDisp_Normal.Click += new System.EventHandler(this.rightClick_Normal_Click);
+            // 
+            // tabTcpClient_RightClick_TxtDisp_AllHexExceptNL
+            // 
+            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL.Name = "tabTcpClient_RightClick_TxtDisp_AllHexExceptNL";
+            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL.Size = new System.Drawing.Size(201, 22);
+            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL.Text = "All HEX Except \\n and \\r";
+            this.tabTcpClient_RightClick_TxtDisp_AllHexExceptNL.Click += new System.EventHandler(this.rightClick_AllButNL_Click);
+            // 
+            // tabTcpClient_RightClick_TxtDisp_AllHex
+            // 
+            this.tabTcpClient_RightClick_TxtDisp_AllHex.Name = "tabTcpClient_RightClick_TxtDisp_AllHex";
+            this.tabTcpClient_RightClick_TxtDisp_AllHex.Size = new System.Drawing.Size(201, 22);
+            this.tabTcpClient_RightClick_TxtDisp_AllHex.Text = "All HEX";
+            this.tabTcpClient_RightClick_TxtDisp_AllHex.Click += new System.EventHandler(this.rightClick_HEX_Click);
+            // 
+            // tabTcpClient_RightClick_OpenDir
+            // 
+            this.tabTcpClient_RightClick_OpenDir.Name = "tabTcpClient_RightClick_OpenDir";
+            this.tabTcpClient_RightClick_OpenDir.Size = new System.Drawing.Size(196, 22);
+            this.tabTcpClient_RightClick_OpenDir.Text = "Open Log Containg Dir";
+            this.tabTcpClient_RightClick_OpenDir.Click += new System.EventHandler(this.openLogContaingDirToolStripMenuItem_Click);
+            // 
+            // tabTcpClient_RightClick_OpenFile
+            // 
+            this.tabTcpClient_RightClick_OpenFile.Name = "tabTcpClient_RightClick_OpenFile";
+            this.tabTcpClient_RightClick_OpenFile.Size = new System.Drawing.Size(196, 22);
+            this.tabTcpClient_RightClick_OpenFile.Text = "Open Log File";
+            this.tabTcpClient_RightClick_OpenFile.Click += new System.EventHandler(this.openLogFileToolStripMenuItem_Click);
+            // 
+            // tabTcpSvr_contextMenuStrip
+            // 
+            this.tabTcpSvr_contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tabTcpSvr_RightClick_Clear,
+            this.toolStripSeparator3,
+            this.toolStripMenuItem3,
+            this.tabTcpSvr_RightClick_OpenDir,
+            this.tabTcpSvr_RightClick_OpenFile});
+            this.tabTcpSvr_contextMenuStrip.Name = "rightClickContextMain";
+            this.tabTcpSvr_contextMenuStrip.Size = new System.Drawing.Size(197, 98);
+            // 
+            // tabTcpSvr_RightClick_Clear
+            // 
+            this.tabTcpSvr_RightClick_Clear.Name = "tabTcpSvr_RightClick_Clear";
+            this.tabTcpSvr_RightClick_Clear.Size = new System.Drawing.Size(196, 22);
+            this.tabTcpSvr_RightClick_Clear.Text = "Clear";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(193, 6);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tabTcpSvr_RightClick_TxtDisp_None,
+            this.tabTcpSvr_RightClick_TxtDisp_Normal,
+            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL,
+            this.tabTcpSvr_RightClick_TxtDisp_AllHex});
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(196, 22);
+            this.toolStripMenuItem3.Text = "Text Display Type";
+            // 
+            // tabTcpSvr_RightClick_TxtDisp_None
+            // 
+            this.tabTcpSvr_RightClick_TxtDisp_None.Name = "tabTcpSvr_RightClick_TxtDisp_None";
+            this.tabTcpSvr_RightClick_TxtDisp_None.Size = new System.Drawing.Size(201, 22);
+            this.tabTcpSvr_RightClick_TxtDisp_None.Text = "No Special Characters";
+            this.tabTcpSvr_RightClick_TxtDisp_None.Click += new System.EventHandler(this.rightClick_NoSpecial_Click);
+            // 
+            // tabTcpSvr_RightClick_TxtDisp_Normal
+            // 
+            this.tabTcpSvr_RightClick_TxtDisp_Normal.Name = "tabTcpSvr_RightClick_TxtDisp_Normal";
+            this.tabTcpSvr_RightClick_TxtDisp_Normal.Size = new System.Drawing.Size(201, 22);
+            this.tabTcpSvr_RightClick_TxtDisp_Normal.Text = "Normal";
+            this.tabTcpSvr_RightClick_TxtDisp_Normal.Click += new System.EventHandler(this.rightClick_Normal_Click);
+            // 
+            // tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL
+            // 
+            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL.Name = "tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL";
+            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL.Size = new System.Drawing.Size(201, 22);
+            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL.Text = "All HEX Except \\n and \\r";
+            this.tabTcpSvr_RightClick_TxtDisp_AllHexExceptNL.Click += new System.EventHandler(this.rightClick_AllButNL_Click);
+            // 
+            // tabTcpSvr_RightClick_TxtDisp_AllHex
+            // 
+            this.tabTcpSvr_RightClick_TxtDisp_AllHex.Name = "tabTcpSvr_RightClick_TxtDisp_AllHex";
+            this.tabTcpSvr_RightClick_TxtDisp_AllHex.Size = new System.Drawing.Size(201, 22);
+            this.tabTcpSvr_RightClick_TxtDisp_AllHex.Text = "All HEX";
+            this.tabTcpSvr_RightClick_TxtDisp_AllHex.Click += new System.EventHandler(this.rightClick_HEX_Click);
+            // 
+            // tabTcpSvr_RightClick_OpenDir
+            // 
+            this.tabTcpSvr_RightClick_OpenDir.Name = "tabTcpSvr_RightClick_OpenDir";
+            this.tabTcpSvr_RightClick_OpenDir.Size = new System.Drawing.Size(196, 22);
+            this.tabTcpSvr_RightClick_OpenDir.Text = "Open Log Containg Dir";
+            this.tabTcpSvr_RightClick_OpenDir.Click += new System.EventHandler(this.openLogContaingDirToolStripMenuItem_Click);
+            // 
+            // tabTcpSvr_RightClick_OpenFile
+            // 
+            this.tabTcpSvr_RightClick_OpenFile.Name = "tabTcpSvr_RightClick_OpenFile";
+            this.tabTcpSvr_RightClick_OpenFile.Size = new System.Drawing.Size(196, 22);
+            this.tabTcpSvr_RightClick_OpenFile.Text = "Open Log File";
+            this.tabTcpSvr_RightClick_OpenFile.Click += new System.EventHandler(this.openLogFileToolStripMenuItem_Click);
+            // 
+            // tabUdpClient_contextMenuStrip
+            // 
+            this.tabUdpClient_contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tabUdpClient_RightClick_Clear,
+            this.toolStripSeparator4,
+            this.toolStripMenuItem4,
+            this.tabUdpClient_RightClick_OpenDir,
+            this.tabUdpClient_RightClick_OpenFile});
+            this.tabUdpClient_contextMenuStrip.Name = "rightClickContextMain";
+            this.tabUdpClient_contextMenuStrip.Size = new System.Drawing.Size(197, 120);
+            // 
+            // tabUdpClient_RightClick_Clear
+            // 
+            this.tabUdpClient_RightClick_Clear.Name = "tabUdpClient_RightClick_Clear";
+            this.tabUdpClient_RightClick_Clear.Size = new System.Drawing.Size(196, 22);
+            this.tabUdpClient_RightClick_Clear.Text = "Clear";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(193, 6);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tabUdpClient_RightClick_TxtDisp_None,
+            this.tabUdpClient_RightClick_TxtDisp_Normal,
+            this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL,
+            this.tabUdpClient_RightClick_TxtDisp_AllHex});
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(196, 22);
+            this.toolStripMenuItem4.Text = "Text Display Type";
+            // 
+            // tabUdpClient_RightClick_TxtDisp_None
+            // 
+            this.tabUdpClient_RightClick_TxtDisp_None.Name = "tabUdpClient_RightClick_TxtDisp_None";
+            this.tabUdpClient_RightClick_TxtDisp_None.Size = new System.Drawing.Size(201, 22);
+            this.tabUdpClient_RightClick_TxtDisp_None.Text = "No Special Characters";
+            // 
+            // tabUdpClient_RightClick_TxtDisp_Normal
+            // 
+            this.tabUdpClient_RightClick_TxtDisp_Normal.Name = "tabUdpClient_RightClick_TxtDisp_Normal";
+            this.tabUdpClient_RightClick_TxtDisp_Normal.Size = new System.Drawing.Size(201, 22);
+            this.tabUdpClient_RightClick_TxtDisp_Normal.Text = "Normal";
+            // 
+            // tabUdpClient_RightClick_TxtDisp_AllHexExceptNL
+            // 
+            this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Name = "tabUdpClient_RightClick_TxtDisp_AllHexExceptNL";
+            this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Size = new System.Drawing.Size(201, 22);
+            this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Text = "All HEX Except \\n and \\r";
+            // 
+            // tabUdpClient_RightClick_TxtDisp_AllHex
+            // 
+            this.tabUdpClient_RightClick_TxtDisp_AllHex.Name = "tabUdpClient_RightClick_TxtDisp_AllHex";
+            this.tabUdpClient_RightClick_TxtDisp_AllHex.Size = new System.Drawing.Size(201, 22);
+            this.tabUdpClient_RightClick_TxtDisp_AllHex.Text = "All HEX";
+            // 
+            // tabUdpClient_RightClick_OpenDir
+            // 
+            this.tabUdpClient_RightClick_OpenDir.Name = "tabUdpClient_RightClick_OpenDir";
+            this.tabUdpClient_RightClick_OpenDir.Size = new System.Drawing.Size(196, 22);
+            this.tabUdpClient_RightClick_OpenDir.Text = "Open Log Containg Dir";
+            // 
+            // tabUdpClient_RightClick_OpenFile
+            // 
+            this.tabUdpClient_RightClick_OpenFile.Name = "tabUdpClient_RightClick_OpenFile";
+            this.tabUdpClient_RightClick_OpenFile.Size = new System.Drawing.Size(196, 22);
+            this.tabUdpClient_RightClick_OpenFile.Text = "Open Log File";
             // 
             // MainForm
             // 
@@ -5651,6 +5731,12 @@
             this.tabTcpSvr_splitContainer.ResumeLayout(false);
             this.tabUdpClient.ResumeLayout(false);
             this.tabUdpClient.PerformLayout();
+            this.tabUdpClient_splitContainer.Panel1.ResumeLayout(false);
+            this.tabUdpClient_splitContainer.Panel1.PerformLayout();
+            this.tabUdpClient_splitContainer.Panel2.ResumeLayout(false);
+            this.tabUdpClient_splitContainer.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabUdpClient_splitContainer)).EndInit();
+            this.tabUdpClient_splitContainer.ResumeLayout(false);
             this.tabProgram.ResumeLayout(false);
             this.tabProgram.PerformLayout();
             this.tabUtil.ResumeLayout(false);
@@ -5660,12 +5746,7 @@
             this.tabSerial_rightClickContextMain.ResumeLayout(false);
             this.tabTcpClient_contextMenuStrip.ResumeLayout(false);
             this.tabTcpSvr_contextMenuStrip.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.tabUdpClient_contextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6033,7 +6114,7 @@
         private System.Windows.Forms.Panel tabSerial_panDSR;
         private System.Windows.Forms.CheckBox tabSerial_cbTimeStamp;
         private System.Windows.Forms.TabPage tabUdpClient;
-        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer tabUdpClient_splitContainer;
         private System.Windows.Forms.Button tabUdpClient_butSend1;
         private System.Windows.Forms.CheckBox tabUdpClient_cbLFSend8;
         private System.Windows.Forms.CheckBox tabUdpClient_cbLFSend7;
@@ -6125,6 +6206,16 @@
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.TextBox tabUdpClient_tbIPAddr;
         private System.Windows.Forms.Button tabUdpClient_butOpen;
+        private System.Windows.Forms.ContextMenuStrip tabUdpClient_contextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem tabUdpClient_RightClick_Clear;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem tabUdpClient_RightClick_TxtDisp_None;
+        private System.Windows.Forms.ToolStripMenuItem tabUdpClient_RightClick_TxtDisp_Normal;
+        private System.Windows.Forms.ToolStripMenuItem tabUdpClient_RightClick_TxtDisp_AllHexExceptNL;
+        private System.Windows.Forms.ToolStripMenuItem tabUdpClient_RightClick_TxtDisp_AllHex;
+        private System.Windows.Forms.ToolStripMenuItem tabUdpClient_RightClick_OpenDir;
+        private System.Windows.Forms.ToolStripMenuItem tabUdpClient_RightClick_OpenFile;
     }
 }
 

@@ -14,30 +14,30 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
 
-namespace SerialTerminal.TCPTab {
+namespace SerialTerminal.TabUdpClient {
     class UDPClient {
-        private TcpClient client;
+        private UdpClient client = null;
         public delegate void SetComButtDelegate(bool open);
         public static event SetComButtDelegate SetCommButt;
 
         private BlockingCollection<int> queuedRxBytes = new BlockingCollection<int>();
-        private string Tcp_LogFileName = "";
+        private string LogFileName = "";
         private System.IO.StreamWriter logFile;
         private RichTextBox logTB = null;
         public StringBuilder logBuffer = new StringBuilder();
         private Color logBufLastColor = Color.Black;
-        private bool tcpTB_Update = false;
-        private NetworkStream clientStream = null;
+        private bool TB_Update = false;
         private System.Timers.Timer timer = new System.Timers.Timer();
         private Thread rxThread = null;
         private SemaphoreSlim sbSemaphore = new SemaphoreSlim(1);
+        bool open = false;  //required - unlike comport/tcp no knowledge if this is open
 
         public UDPClient(RichTextBox _tbLogtbLog) {
             logTB = _tbLogtbLog;
         }
 
         void StartLogging() {
-            if (Tcp_LogFileName != "")
+            if (LogFileName != "")
                 return;
 
             if (Config.Data.Serial_LogDirectory == null ||
@@ -48,13 +48,13 @@ namespace SerialTerminal.TCPTab {
             }
 
             int num = 1;
-            Tcp_LogFileName = "STerminal-TCP-" + DateTime.Now.ToString("yyyy-MM-dd");
+            LogFileName = "STerminal-UDP-Client-" + DateTime.Now.ToString("yyyy-MM-dd");
             string serialLogExtension = ".log";
 
             while (true) {
                 try {
-                    logFile = new System.IO.StreamWriter(Config.Data.Serial_LogDirectory + Tcp_LogFileName + serialLogExtension, true);
-                    Tcp_LogFileName += serialLogExtension;
+                    logFile = new System.IO.StreamWriter(Config.Data.Serial_LogDirectory + LogFileName + serialLogExtension, true);
+                    LogFileName += serialLogExtension;
                     break;
                 }
                 catch {
@@ -74,27 +74,27 @@ namespace SerialTerminal.TCPTab {
             rxThread.Start();
         }
 
-        void DataReceived_Threaded() {
-            while (true) {
-                try {
-                    int b = clientStream.ReadByte();
+        //void DataReceived_Threaded() {
+        //    while (true) {
+        //        try {
+        //            int b = clientStream.ReadByte();
 
-                    if ((b >= 0 && b <= 0xFF) || b == -1) {
-                        queuedRxBytes.Add(b);
+        //            if ((b >= 0 && b <= 0xFF) || b == -1) {
+        //                queuedRxBytes.Add(b);
 
-                        if (b == -1) {
-                            //remotely closed
-                            return;
-                        }
-                    }
-                }
-                catch (Exception) {
-                    //PreprocessAppend("TCP Connection closed?", Color.Red);
-                    Close(null);
-                    return;
-                }
-            }
-        }
+        //                if (b == -1) {
+        //                    //remotely closed
+        //                    return;
+        //                }
+        //            }
+        //        }
+        //        catch (Exception) {
+        //            //PreprocessAppend("UDP Connection closed?", Color.Red);
+        //            Close(null);
+        //            return;
+        //        }
+        //    }
+        //}
 
         private void DataHandle_Threaded() {
             while (true) {
@@ -143,11 +143,11 @@ namespace SerialTerminal.TCPTab {
         }
 
         private async void Timer_UpdateLog(object source, ElapsedEventArgs e) {
-            if (tcpTB_Update && logBuffer.Length > 0) {
+            if (TB_Update && logBuffer.Length > 0) {
                 try {
                     //block up to 1s
                     await sbSemaphore.WaitAsync();
-                    tcpTB_Update = false;
+                    TB_Update = false;
                     logTB.Invoke((MethodInvoker)(delegate () {
 
                         logTB.Rtf = logBuffer.ToString() + "}";
@@ -165,11 +165,11 @@ namespace SerialTerminal.TCPTab {
 
         //used for open directory or open file in right-click context menu
         public string GetLogFileName() {
-            return Tcp_LogFileName;
+            return LogFileName;
         }
 
-        public async void Open(object sender, EventArgs e, string ipAddress, string port) {
-            client = new TcpClient();
+        public void Open(object sender, EventArgs e, string ipAddress, string port) {
+            client = new UdpClient();
             //open new connection
             StartLogging();
 
@@ -183,7 +183,7 @@ namespace SerialTerminal.TCPTab {
             SetCommButt(true);
 
             try {
-                await client.ConnectAsync(ipAddress, port_num);
+                client.Connect(ipAddress, port_num);
             }
             catch (Exception ex) {
                 if (ex is SocketException) {
@@ -196,23 +196,37 @@ namespace SerialTerminal.TCPTab {
                 return;
             }
 
-            if (client.Connected) {
-                PreprocessAppend("Connected!\r\n", Color.Green);
-                clientStream = client.GetStream();
+            PreprocessAppend("Connection likely established...!\r\n", Color.Green);
+            //clientStream = client.rea
+            this.open = true;
 
-                rxThread = new Thread(new ThreadStart(DataReceived_Threaded));
-                rxThread.IsBackground = true;
-                rxThread.Start();
-            }
-            else {
-                SetCommButt(false);
-            }
+            Task.Run(async () => {
+                while (this.open) {
+                    try {
+                        UdpReceiveResult rxResult = await client.ReceiveAsync();
+
+                        foreach (var b in rxResult.Buffer) {
+                            if ((b >= 0 && b <= 0xFF)) {
+                                queuedRxBytes.Add(b);
+                            }
+                        }
+                    }
+                    catch (Exception) {
+                        //something closed? never really sure...just ignore me =]
+                        break;
+                    }
+                }
+            });
+
+            //rxThread = new Thread(new ThreadStart(DataReceived_Threaded));
+            //rxThread.IsBackground = true;
+            //rxThread.Start();
         }
 
         public void Close(string msg) {
             SetCommButt(false);
+            this.open = false;
 
-            clientStream = null;
             //client.Dispose();
             if (client != null) {
                 lock (client)
@@ -220,8 +234,9 @@ namespace SerialTerminal.TCPTab {
             }
 
             if (msg == null) {
-                PreprocessAppend("TCP Connection Closed.\r\n", Color.Red);
+                PreprocessAppend("UDP Connection Closed.\r\n", Color.Red);
             }
+            client = null;
         }
 
         public void Write_Click(object sender, EventArgs e, string text, Color txtColor) {
@@ -230,15 +245,16 @@ namespace SerialTerminal.TCPTab {
 
         private void Write(string str, Color txtColor, bool sendCmd) {
             if (sendCmd) {
-                if (client.Connected) {
-                    //sp.Write(str);
+                if (this.open) {
+                    byte[] bytes = ASCIIEncoding.ASCII.GetBytes(str);
+                    this.client.Send(bytes, bytes.Length);
                 }
                 else {
                     PreprocessAppend("Error, com port not opened", Color.Red);
                     return;
                 }
             }
-            else if (client == null || Tcp_LogFileName.Equals("")) {
+            else if (client == null || LogFileName.Equals("")) {
                 System.Windows.Forms.MessageBox.Show("Bug!\r\n");
                 return;
             }
@@ -259,7 +275,7 @@ namespace SerialTerminal.TCPTab {
             logFile.Write(str);
             logFile.Flush();
 
-            tcpTB_Update = true;
+            TB_Update = true;
             await sbSemaphore.WaitAsync();
             Util.UpdateLog(logBuffer, str, txtColor, ref logBufLastColor);
             sbSemaphore.Release();
@@ -268,10 +284,13 @@ namespace SerialTerminal.TCPTab {
         public void SendCommand(string str, bool hex, bool line_feed) {
             IProgress<Util.CmdResponse> resp = new Progress<Util.CmdResponse>((o) => PreprocessAppend(o));
             try {
-                Util.SendCommand(resp, client.GetStream(), str, hex, line_feed);
+                MemoryStream stream = new MemoryStream();
+                Util.SendCommand(resp, stream, str, hex, line_feed);
+                byte[] bytes = stream.ToArray();
+                client.Send(bytes, bytes.Length);
             }
             catch (Exception) {
-                resp.Report(new Util.CmdResponse("TCP connection not opened\r\n", Color.Red, true));
+                resp.Report(new Util.CmdResponse("UDP connection not opened\r\n", Color.Red, true));
             }
         }
 
@@ -281,7 +300,7 @@ namespace SerialTerminal.TCPTab {
             foreach (var ctrl in container.Panel1.Controls) {
                 if (ctrl.GetType() == typeof(Button)) {
                     var btn = ctrl as Button;
-                    btn.Click += (s, EventArgs) => { tabTcp_SendDataButtonClicked(s, EventArgs, container); };
+                    btn.Click += (s, EventArgs) => { tabUdpClient_SendDataButtonClicked(s, EventArgs, container); };
                 }
             }
 
@@ -289,33 +308,26 @@ namespace SerialTerminal.TCPTab {
             foreach (var ctrl in container.Panel2.Controls) {
                 if (ctrl.GetType() == typeof(Button)) {
                     var btn = ctrl as Button;
-                    btn.Click += (s, EventArgs) => { tabTcp_SendDataButtonClicked(s, EventArgs, container); };
+                    btn.Click += (s, EventArgs) => { tabUdpClient_SendDataButtonClicked(s, EventArgs, container); };
                 }
             }
         }
 
 
-        public void tabTcp_SendDataButtonClicked(object sender, EventArgs e, SplitContainer container) {
+        public void tabUdpClient_SendDataButtonClicked(object sender, EventArgs e, SplitContainer container) {
             if (client == null) {
                 return;
             }
 
             //MessageBox.Show((sender as Button).Name);
-            var txtName = (sender as Button).Name.Replace("tabTcp_butSend", "tabTcp_tbSend");
-            var hex_chkBox = txtName.Replace("tabTcp_tbSend", "tabTcp_cbHexSend");
-            var lf_chkBox = txtName.Replace("tabTcp_tbSend", "tabTcp_cbLFSend");
+            var txtName = (sender as Button).Name.Replace("tabUdpClient_butSend", "tabUdpClient_tbSend");
+            var hex_chkBox = txtName.Replace("tabUdpClient_tbSend", "tabUdpClient_cbHexSend");
+            var lf_chkBox = txtName.Replace("tabUdpClient_tbSend", "tabUdpClient_cbLFSend");
 
             IProgress<Util.CmdResponse> resp = new Progress<Util.CmdResponse>((o) => PreprocessAppend(o));
 
-            NetworkStream stream = null;
-            try {
-                stream = client.GetStream();
-            }
-            catch (System.InvalidOperationException) {
-                //resp.Report(new Util.CmdResponse("TCP Connection collapsed. Likely server stopped.", Color.Red, true));
-                Close("TCP Connection collapsed. Likely server crashed/timedout or internet dropped.");
-                return;
-            }
+
+            MemoryStream stream = new MemoryStream();
 
             if (container.Panel1.Controls[txtName] != null) {
                 Util.SendCommand(resp, stream, (container.Panel1.Controls[txtName] as TextBox).Text, (container.Panel1.Controls[hex_chkBox] as CheckBox).Checked, (container.Panel1.Controls[lf_chkBox] as CheckBox).Checked);
@@ -323,6 +335,9 @@ namespace SerialTerminal.TCPTab {
             else if (container.Panel2.Controls[txtName] != null) {
                 Util.SendCommand(resp, stream, (container.Panel2.Controls[txtName] as TextBox).Text, (container.Panel2.Controls[hex_chkBox] as CheckBox).Checked, (container.Panel2.Controls[lf_chkBox] as CheckBox).Checked);
             }
+
+            byte[] bytes = stream.ToArray();
+            client.Send(bytes, bytes.Length);
         }
         #endregion
     }

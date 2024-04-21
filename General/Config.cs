@@ -136,6 +136,27 @@ namespace SerialTerminal
 		public bool[] TcpSvrLFCB { get; set; }
 		#endregion
 
+
+		#region UDP Client
+		public string UdpClientIPAddr { get; set; }
+		public string UdpClientPort { get; set; }
+
+		//directory to log data to when a tcp connection is open
+		public string UdpClient_LogDirectory { get; set; }
+
+		//the format that text will appear in the tcp tab. binary, text, non-ascii only etc.
+		public int UdpClient_DisplayLevel { get; set; }
+
+		//text in the quick send boxes for the Serial Form.
+		public string[] UdpClientTextBox { get; set; }
+
+		//text in the quick send boxes for the Serial Form.
+		public bool[] UdpClientHexCB { get; set; }
+
+		//text in the quick send boxes for the Serial Form.
+		public bool[] UdpClientLFCB { get; set; }
+		#endregion
+
 		#region Programmer
 		public string Prog_Firmware_SPI
         { get; set; }
