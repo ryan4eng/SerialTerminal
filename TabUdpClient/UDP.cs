@@ -115,17 +115,17 @@ namespace SerialTerminal.TabUdpClient {
                 }
 
                 //color = Color.Gray;
-                if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NONE) || (Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL)) {
+                if ((Config.Data.UdpClient_DisplayLevel == GLOBAL.HEX_LEVEL_NONE) || (Config.Data.UdpClient_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL)) {
                     if ((hex_byte == '\n') || (hex_byte == '\t') || ((hex_byte >= 0x20) && (hex_byte <= 0x7E))) {
                         string tmpString = new string((char)hex_byte, 1);
                         PreprocessAppend(tmpString, Color.Black);
                     }
-                    else if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL) && (hex_byte != '\r')) {
+                    else if ((Config.Data.UdpClient_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL) && (hex_byte != '\r')) {
                         PreprocessAppend("{" + Util.ByteToHexBitFiddle(hex_byte) + "}", Color.Gray);
                     }
                 }
-                else if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL) || (Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL)) {
-                    if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL) && ((hex_byte == '\n') || (hex_byte == '\r'))) {
+                else if ((Config.Data.UdpClient_DisplayLevel == GLOBAL.HEX_LEVEL_ALL) || (Config.Data.UdpClient_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL)) {
+                    if ((Config.Data.UdpClient_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL) && ((hex_byte == '\n') || (hex_byte == '\r'))) {
                         if (hex_byte == '\n') {
                             string tmpString = new string((char)hex_byte, 1);
                             PreprocessAppend(tmpString, Color.Black);

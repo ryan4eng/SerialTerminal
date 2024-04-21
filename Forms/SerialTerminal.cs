@@ -122,12 +122,30 @@ namespace SerialTerminal.Main {
                     if (Config.Data.TcpSvrLFCB?.Length > 0)
                         ((CheckBox)this.Controls.Find("tabTcp_cbLFSend" + (i + 1), true)[0]).Checked = Config.Data.TcpSvrLFCB[i];
                 }
+
+                /////////////////
+                // UDP Client config
+                tabUdpClient_tbIPAddr.Text = Config.Data.UdpClientIPAddr;
+                if (Config.Data.UdpClientPort?.Length <= tabUdpClient_tbPort.MaxLength)
+                    tabUdpClient_tbPort.Text = Config.Data.UdpClientPort;
+
+                for (int i = 0; i < 16; i++) {
+                    if (Config.Data.UdpClientTextBox?.Length > 0)
+                        this.Controls.Find("tabUdpClient_tbSend" + (i + 1), true)[0].Text = Config.Data.UdpClientTextBox[i];
+
+                    if (Config.Data.UdpClientHexCB?.Length > 0)
+                        ((CheckBox)this.Controls.Find("tabUdpClient_cbHexSend" + (i + 1), true)[0]).Checked = Config.Data.UdpClientHexCB[i];
+
+                    if (Config.Data.UdpClientLFCB?.Length > 0)
+                        ((CheckBox)this.Controls.Find("tabUdpClient_cbLFSend" + (i + 1), true)[0]).Checked = Config.Data.UdpClientLFCB[i];
+                }
             }
             else {
                 //force defaults
                 Config.Data.Serial_DisplayLevel = GLOBAL.HEX_LEVEL_NORMAL;
                 Config.Data.TcpClient_DisplayLevel = GLOBAL.HEX_LEVEL_NORMAL;
                 Config.Data.TcpSvr_DisplayLevel = GLOBAL.HEX_LEVEL_NORMAL;
+                Config.Data.UdpClient_DisplayLevel = GLOBAL.HEX_LEVEL_NORMAL;
             }
             #endregion
             ///////////////////////////////////////////////////////
@@ -471,7 +489,7 @@ namespace SerialTerminal.Main {
             }
 
             ////////////////////////
-            //TCP Tab
+            //TCP Client Tab
             Config.Data.TcpClientIPAddr = tabTcpClient_tbIPAddr.Text;
             Config.Data.TcpClientPort = tabTcpClient_tbPort.Text;
 
@@ -497,6 +515,21 @@ namespace SerialTerminal.Main {
                 Config.Data.TcpSvrTextBox[i] = this.Controls.Find("tabTcp_tbSend" + (i + 1), true)[0].Text;
                 Config.Data.TcpSvrHexCB[i] = ((CheckBox)this.Controls.Find("tabTcp_cbHexSend" + (i + 1), true)[0]).Checked;
                 Config.Data.TcpSvrLFCB[i] = ((CheckBox)this.Controls.Find("tabTcp_cbLFSend" + (i + 1), true)[0]).Checked;
+            }
+
+            ////////////////////////
+            //Udp Client Tab
+            Config.Data.UdpClientIPAddr = tabUdpClient_tbIPAddr.Text;
+            Config.Data.UdpClientPort = tabUdpClient_tbPort.Text;
+
+            Config.Data.UdpClientTextBox = new string[16];
+            Config.Data.UdpClientLFCB = new bool[16];
+            Config.Data.UdpClientHexCB = new bool[16];
+
+            for (int i = 0; i < 16; i++) {
+                Config.Data.UdpClientTextBox[i] = this.Controls.Find("tabUdpClient_tbSend" + (i + 1), true)[0].Text;
+                Config.Data.UdpClientHexCB[i] = ((CheckBox)this.Controls.Find("tabUdpClient_cbHexSend" + (i + 1), true)[0]).Checked;
+                Config.Data.UdpClientLFCB[i] = ((CheckBox)this.Controls.Find("tabUdpClient_cbLFSend" + (i + 1), true)[0]).Checked;
             }
 
             Config.SerializeToXML();
@@ -567,7 +600,7 @@ namespace SerialTerminal.Main {
                 tabTcpClient_RightClick_TxtDisp_AllHex.Checked = false;
             }
             else if (tab == tabUdpClient) {
-                Config.Data.TcpSvr_DisplayLevel = GLOBAL.HEX_LEVEL_NONE;
+                Config.Data.UdpClient_DisplayLevel = GLOBAL.HEX_LEVEL_NONE;
                 tabUdpClient_RightClick_TxtDisp_None.Checked = true;
                 tabUdpClient_RightClick_TxtDisp_Normal.Checked = false;
                 tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Checked = false;
@@ -599,7 +632,7 @@ namespace SerialTerminal.Main {
                 tabTcpSvr_RightClick_TxtDisp_AllHex.Checked = false;
             }
             else if (tab == tabUdpClient) {
-                Config.Data.TcpSvr_DisplayLevel = GLOBAL.HEX_LEVEL_NORMAL;
+                Config.Data.UdpClient_DisplayLevel = GLOBAL.HEX_LEVEL_NORMAL;
                 tabUdpClient_RightClick_TxtDisp_None.Checked = false;
                 tabUdpClient_RightClick_TxtDisp_Normal.Checked = true;
                 tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Checked = false;
@@ -631,7 +664,7 @@ namespace SerialTerminal.Main {
                 tabTcpSvr_RightClick_TxtDisp_AllHex.Checked = false;
             }
             else if (tab == tabUdpClient) {
-                Config.Data.TcpSvr_DisplayLevel = GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL;
+                Config.Data.UdpClient_DisplayLevel = GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL;
                 tabUdpClient_RightClick_TxtDisp_None.Checked = false;
                 tabUdpClient_RightClick_TxtDisp_Normal.Checked = false;
                 tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Checked = true;
@@ -663,7 +696,7 @@ namespace SerialTerminal.Main {
                 tabTcpSvr_RightClick_TxtDisp_AllHex.Checked = true;
             }
             else if (tab == tabUdpClient) {
-                Config.Data.TcpSvr_DisplayLevel = GLOBAL.HEX_LEVEL_ALL;
+                Config.Data.UdpClient_DisplayLevel = GLOBAL.HEX_LEVEL_ALL;
                 tabUdpClient_RightClick_TxtDisp_None.Checked = false;
                 tabUdpClient_RightClick_TxtDisp_Normal.Checked = false;
                 tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Checked = false;

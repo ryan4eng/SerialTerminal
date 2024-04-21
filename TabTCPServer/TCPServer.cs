@@ -72,17 +72,17 @@ namespace SerialTerminal.TabTCPServer {
 				}
 
 				//color = Color.Gray;
-				if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NONE) || (Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL)) {
+				if ((Config.Data.TcpSvr_DisplayLevel == GLOBAL.HEX_LEVEL_NONE) || (Config.Data.TcpSvr_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL)) {
 					if ((hex_byte == '\n') || (hex_byte == '\t') || ((hex_byte >= 0x20) && (hex_byte <= 0x7E))) {
 						string tmpString = new string((char)hex_byte, 1);
 						PreprocessAppend(tmpString, Color.Black);
 					}
-					else if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL) && (hex_byte != '\r')) {
+					else if ((Config.Data.TcpSvr_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL) && (hex_byte != '\r')) {
 						PreprocessAppend("{" + Util.ByteToHexBitFiddle(hex_byte) + "}", Color.Gray);
 					}
 				}
-				else if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL) || (Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL)) {
-					if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL) && ((hex_byte == '\n') || (hex_byte == '\r'))) {
+				else if ((Config.Data.TcpSvr_DisplayLevel == GLOBAL.HEX_LEVEL_ALL) || (Config.Data.TcpSvr_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL)) {
+					if ((Config.Data.TcpSvr_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL) && ((hex_byte == '\n') || (hex_byte == '\r'))) {
 						if (hex_byte == '\n') {
 							string tmpString = new string((char)hex_byte, 1);
 							PreprocessAppend(tmpString, Color.Black);
@@ -161,65 +161,26 @@ namespace SerialTerminal.TabTCPServer {
 
 			string path = "";
 			bool writeHeader = false;
-			System.Timers.Timer t = new System.Timers.Timer();
-			t.Interval = 10*1000;
-
-			//t.Elapsed += (obj, sender) => {
-			//	t.Stop();
-			//	PreprocessAppend("Client timeout " + connectionName + "\r\n", Color.Blue);
-			//	client.Close();
-			//};
-			//t.Start();
+			//System.Timers.Timer t = new System.Timers.Timer();
+			//t.Interval = 10*1000;
 
 			try {
 				StringBuilder sb = new StringBuilder();
 				while (true) {
 					int b = client.GetStream().ReadByte();
-					//reset socket timer
-					t.Stop();
-					t.Start();
 
 					if (!client.Connected || b == -1) {
 						PreprocessAppend("Client disconnected " + connectionName +"\r\n", Color.Blue);
 						break;
 					}
 					else {
-						if (macLog != null) {
-							macLog.Write((char)b);
-						}
-						else if (sb != null) {
-							char c = (char)b;
-							if (b >= 32) {
-								sb.Append(c);
-							}
-							else if (b == 0x0a || b == 0x0d) {
-								if (Config.Data.Serial_LogDirectory != null) {
-									path = Config.Data.Serial_LogDirectory;
-								}
-
-								path += sb.ToString().Replace(':', '-') + ".csv";
-								
-								if (!File.Exists(path)) {
-									writeHeader = true;
-								}
-								macLog = new StreamWriter(path, true);
-								if (writeHeader) {
-									macLog.Write("Epoch,WearLvlID,Humidity,Temperature (C),Latitude,Longitude,Battery Voltage,Charging Voltage,Flag nFault,Flag nCharge," +
-										"S1 Count,S1 1.0,S1 2.5,S1 10.0,S2 Count,S2 1.0,S2 2.5,S2 10.0\n");
-								}
-								sb.Clear();
-								sb = null;
-							}
-						}
 						queuedRxBytes.Add(b);
 					}
 				}
 			}
-			catch (Exception) {
+			catch (Exception e) {
 				PreprocessAppend("Closed connection " + connectionName + "\r\n", Color.Blue);
 			}
-
-			t.Stop();
 
 			if (macLog != null) {
 				macLog.Close();

@@ -63,7 +63,7 @@ namespace SerialTerminal.TCPTab {
                 }
             }
 
-            //start timer for updating serial port log tb
+            //start timer for updating log tb
             timer.Elapsed += new ElapsedEventHandler(Timer_UpdateLog);
             timer.Interval = 50;    //100ms timer
             timer.AutoReset = true;
@@ -115,17 +115,17 @@ namespace SerialTerminal.TCPTab {
                 }
 
                 //color = Color.Gray;
-                if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NONE) || (Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL)) {
+                if ((Config.Data.TcpClient_DisplayLevel == GLOBAL.HEX_LEVEL_NONE) || (Config.Data.TcpClient_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL)) {
                     if ((hex_byte == '\n') || (hex_byte == '\t') || ((hex_byte >= 0x20) && (hex_byte <= 0x7E))) {
                         string tmpString = new string((char)hex_byte, 1);
                         PreprocessAppend(tmpString, Color.Black);
                     }
-                    else if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL) && (hex_byte != '\r')) {
+                    else if ((Config.Data.TcpClient_DisplayLevel == GLOBAL.HEX_LEVEL_NORMAL) && (hex_byte != '\r')) {
                         PreprocessAppend("{" + Util.ByteToHexBitFiddle(hex_byte) + "}", Color.Gray);
                     }
                 }
-                else if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL) || (Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL)) {
-                    if ((Config.Data.Serial_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL) && ((hex_byte == '\n') || (hex_byte == '\r'))) {
+                else if ((Config.Data.TcpClient_DisplayLevel == GLOBAL.HEX_LEVEL_ALL) || (Config.Data.TcpClient_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL)) {
+                    if ((Config.Data.TcpClient_DisplayLevel == GLOBAL.HEX_LEVEL_ALL_EXCEPT_NL) && ((hex_byte == '\n') || (hex_byte == '\r'))) {
                         if (hex_byte == '\n') {
                             string tmpString = new string((char)hex_byte, 1);
                             PreprocessAppend(tmpString, Color.Black);
@@ -277,7 +277,7 @@ namespace SerialTerminal.TCPTab {
 
         #region Buttons
         public void InitButtons(SplitContainer container) {
-            //serial form panel 1
+            //tcp client form panel 1
             foreach (var ctrl in container.Panel1.Controls) {
                 if (ctrl.GetType() == typeof(Button)) {
                     var btn = ctrl as Button;
@@ -285,7 +285,7 @@ namespace SerialTerminal.TCPTab {
                 }
             }
 
-            //serial form panel 2
+            //tcp client form panel 2
             foreach (var ctrl in container.Panel2.Controls) {
                 if (ctrl.GetType() == typeof(Button)) {
                     var btn = ctrl as Button;

@@ -4068,6 +4068,7 @@
             this.tabUdpClient_tbLog.Size = new System.Drawing.Size(894, 261);
             this.tabUdpClient_tbLog.TabIndex = 128;
             this.tabUdpClient_tbLog.Text = "";
+            this.tabUdpClient_tbLog.MouseUp += new System.Windows.Forms.MouseEventHandler(this.logTextBox_MouseUp);
             // 
             // label93
             // 
@@ -5630,13 +5631,14 @@
             this.tabUdpClient_RightClick_OpenDir,
             this.tabUdpClient_RightClick_OpenFile});
             this.tabUdpClient_contextMenuStrip.Name = "rightClickContextMain";
-            this.tabUdpClient_contextMenuStrip.Size = new System.Drawing.Size(197, 120);
+            this.tabUdpClient_contextMenuStrip.Size = new System.Drawing.Size(197, 98);
             // 
             // tabUdpClient_RightClick_Clear
             // 
             this.tabUdpClient_RightClick_Clear.Name = "tabUdpClient_RightClick_Clear";
             this.tabUdpClient_RightClick_Clear.Size = new System.Drawing.Size(196, 22);
             this.tabUdpClient_RightClick_Clear.Text = "Clear";
+            this.tabUdpClient_RightClick_Clear.Click += new System.EventHandler(this.rightClickClear_Click);
             // 
             // toolStripSeparator4
             // 
@@ -5659,36 +5661,42 @@
             this.tabUdpClient_RightClick_TxtDisp_None.Name = "tabUdpClient_RightClick_TxtDisp_None";
             this.tabUdpClient_RightClick_TxtDisp_None.Size = new System.Drawing.Size(201, 22);
             this.tabUdpClient_RightClick_TxtDisp_None.Text = "No Special Characters";
+            this.tabUdpClient_RightClick_TxtDisp_None.Click += new System.EventHandler(this.rightClick_NoSpecial_Click);
             // 
             // tabUdpClient_RightClick_TxtDisp_Normal
             // 
             this.tabUdpClient_RightClick_TxtDisp_Normal.Name = "tabUdpClient_RightClick_TxtDisp_Normal";
             this.tabUdpClient_RightClick_TxtDisp_Normal.Size = new System.Drawing.Size(201, 22);
             this.tabUdpClient_RightClick_TxtDisp_Normal.Text = "Normal";
+            this.tabUdpClient_RightClick_TxtDisp_Normal.Click += new System.EventHandler(this.rightClick_Normal_Click);
             // 
             // tabUdpClient_RightClick_TxtDisp_AllHexExceptNL
             // 
             this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Name = "tabUdpClient_RightClick_TxtDisp_AllHexExceptNL";
             this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Size = new System.Drawing.Size(201, 22);
             this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Text = "All HEX Except \\n and \\r";
+            this.tabUdpClient_RightClick_TxtDisp_AllHexExceptNL.Click += new System.EventHandler(this.rightClick_AllButNL_Click);
             // 
             // tabUdpClient_RightClick_TxtDisp_AllHex
             // 
             this.tabUdpClient_RightClick_TxtDisp_AllHex.Name = "tabUdpClient_RightClick_TxtDisp_AllHex";
             this.tabUdpClient_RightClick_TxtDisp_AllHex.Size = new System.Drawing.Size(201, 22);
             this.tabUdpClient_RightClick_TxtDisp_AllHex.Text = "All HEX";
+            this.tabUdpClient_RightClick_TxtDisp_AllHex.Click += new System.EventHandler(this.rightClick_HEX_Click);
             // 
             // tabUdpClient_RightClick_OpenDir
             // 
             this.tabUdpClient_RightClick_OpenDir.Name = "tabUdpClient_RightClick_OpenDir";
             this.tabUdpClient_RightClick_OpenDir.Size = new System.Drawing.Size(196, 22);
             this.tabUdpClient_RightClick_OpenDir.Text = "Open Log Containg Dir";
+            this.tabUdpClient_RightClick_OpenDir.Click += new System.EventHandler(this.openLogContaingDirToolStripMenuItem_Click);
             // 
             // tabUdpClient_RightClick_OpenFile
             // 
             this.tabUdpClient_RightClick_OpenFile.Name = "tabUdpClient_RightClick_OpenFile";
             this.tabUdpClient_RightClick_OpenFile.Size = new System.Drawing.Size(196, 22);
             this.tabUdpClient_RightClick_OpenFile.Text = "Open Log File";
+            this.tabTcpClient_RightClick_OpenFile.Click += new System.EventHandler(this.openLogFileToolStripMenuItem_Click);
             // 
             // MainForm
             // 

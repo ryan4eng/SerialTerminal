@@ -136,7 +136,6 @@ namespace SerialTerminal
 		public bool[] TcpSvrLFCB { get; set; }
 		#endregion
 
-
 		#region UDP Client
 		public string UdpClientIPAddr { get; set; }
 		public string UdpClientPort { get; set; }
