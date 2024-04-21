@@ -1,0 +1,11 @@
+﻿------------TODO---------------
+- Get TCP working
+- use xml storage instead of property bags (or as well?)
+- Change font and make larger
+- Add log file capability
+- Right click on ct100i and Program GSM buttons to bring up menu with open file location
+
+------------Bugs---------------
+- Control+F(key) still doesn't work
+- when I minimise the app and reopen it doesn't go back fullscreen
+- cursor doesn't go to the end of the application when I append text
