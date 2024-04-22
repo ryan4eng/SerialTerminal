@@ -143,6 +143,12 @@ namespace SerialTerminal.SerialTab {
 				MessageBox.Show(err.Message);
 			}
 
+			if (comPortDropDown.Items.Count == 0)
+			{
+                PreprocessAppend("No available comports found\n", Color.Red, true);
+                return;
+			}
+
 			try {
 				comPortDropDown.DropDownWidth = Util.DropDownWidth(comPortDropDown);
 			}
@@ -292,13 +298,23 @@ namespace SerialTerminal.SerialTab {
 
 				string com_port_tmp = com_port.ToLower();
                 Regex rgx = new Regex(@"^.*\((com\d+)\)$");
+                Regex rgxAlt = new Regex(@"^(com\d+)$");
                 Match mtch = rgx.Match(com_port_tmp);
-                if (!mtch.Success) {
+                Match mtchAlt = rgxAlt.Match(com_port_tmp);
+
+				if (mtch.Success) {
+                    sp.PortName = mtch.Groups[1].Value;
+                }
+				else if (mtchAlt.Success)
+                {
+                    sp.PortName = mtchAlt.Groups[1].Value;
+                }
+                else {
                     PreprocessAppend($"Cannot Open: '{Config.Data.ComPort}'. Bad com port name\r\n", Color.Red, true);
                     return;
                 }
 
-                sp.PortName = mtch.Groups[1].Value;
+                
 
 				int baud;
 				if (!int.TryParse(baud_rate, out baud)) {
