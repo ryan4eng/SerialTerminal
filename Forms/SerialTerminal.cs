@@ -16,8 +16,8 @@ using System.Timers;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.3.0.0")]
-[assembly: AssemblyFileVersion("1.3.0.0")]
+[assembly: AssemblyVersion("1.3.1.0")]
+[assembly: AssemblyFileVersion("1.3.1.0")]
 
 
 
@@ -222,6 +222,10 @@ namespace SerialTerminal.Main {
                     else {
                         tabSerial_butOpen.Enabled = true;
                         tabSerial_butClose.Enabled = false;
+
+                        //clear up CTS and DTR in case they were triggered previously.
+                        tabSerial_panCTS.BackColor = Color.White;
+                        tabSerial_panDSR.BackColor = Color.White;
 
                         //search for "serial" tab in tabcontrol
                         foreach (TabPage tab in tabControl.TabPages) {
