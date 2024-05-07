@@ -16,9 +16,8 @@ using System.Timers;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.3.1.0")]
-[assembly: AssemblyFileVersion("1.3.1.0")]
-
+[assembly: AssemblyVersion("1.3.0.1")]
+[assembly: AssemblyFileVersion("1.3.0.1")]
 
 
 namespace SerialTerminal.Main {
@@ -465,7 +464,7 @@ namespace SerialTerminal.Main {
             ProcessAdvancedSettings();
 
             System.Version version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
-            Version_Number = String.Format("{0}.{1}.{2}.{3}", version.Major, version.Minor, version.Build, version.Revision);
+            Version_Number = String.Format("{0}.{1}.{2}", version.Major, version.Minor, version.Revision);
             this.Text += " v" + Version_Number;
 
             //required for modifier keys? Or generally to use hotkeys in application?
